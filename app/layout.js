@@ -36,6 +36,7 @@ import "./globals.css";
 // import PropTypes from "prop-types";
 // import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
+import Footer from "@/components/Footer";
 // import Script from "next/script";
 // import { Toaster } from "react-hot-toast";
 // import { NextUIProvider } from "@nextui-org/react";
@@ -73,7 +74,7 @@ export default function RootLayout({ children }) {
           <Header />
           {/* <Suspense fallback={<Loading />}>{children}</Suspense> */}
           <Suspense >{children}</Suspense>
-          {/* <Footer /> */}
+          <Footer />
       </body>
     </html>
   );

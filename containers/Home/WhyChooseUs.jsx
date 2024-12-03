@@ -7,9 +7,9 @@ const WhyChooseUs = () => {
   return (
     <div className="padding-x py-[7.5rem] flex justify-between items-center gap-6 w-full">
   
-      <div className="flex-1">
-        <div className="flex flex-col  flex-1">
-          <p className="text-[#9EA9B3] text-sm font-medium">ABOUT BIZLOUNGE</p>
+      <div className="w-[50%]">
+        <div className="flex flex-col  ">
+          <p className="text-[#9EA9B3] text-sm font-medium">WHY CHOOSE US</p>
 
           <p className="flex flex-col text-[#2D3845] font-light text-[40px]">
             Your Trusted Partner in
@@ -41,7 +41,7 @@ const WhyChooseUs = () => {
         </div>
       </div>
 
-      <div className="flex-1 relative ">
+      <div className="">
         
         <Image src={home_why_choose_us} alt="About-img" width={400} height={400} className="h-[400px] w-[400px] object-cover " />
     

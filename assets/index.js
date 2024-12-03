@@ -1,4 +1,7 @@
 import logo from "../assets/logo.svg";
+import logo_blue from "../assets/logo_blue.svg";
+import certificate from "../assets/certificate.svg";
+import certificate_blue from "../assets/certificate_blue.svg";
 import home_bg from "../assets/home-bg.png";
 import home_about_1 from "../assets/Home-about-1.png";
 import home_about_2 from "../assets/Home-about-2.png";
@@ -29,6 +32,9 @@ import main_land_service_icon_white_3 from "../assets/main_land_service_icon_3_w
 import main_land_service_icon_white_4 from "../assets/main_land_service_icon_4_white.svg";
 export {
   logo,
+  logo_blue,
+  certificate,
+  certificate_blue,
   home_bg,
   home_about_1,
   home_about_2,
