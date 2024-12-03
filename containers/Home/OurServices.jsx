@@ -3,12 +3,12 @@ import Image from "next/image";
 
 const OurServices = () => {
   return (
-    <div className="padding-x py-[7.5rem] bg-service_bg flex flex-col justify-center items-center">
-      <div className="flex justify-between items-center">
-        <div className="flex-1">
+    <div className="padding-x py-[7.5rem] bg-service_bg flex flex-col justify-center items-center max-sm:py-[2rem] bg-no-repeat bg-cover">
+      <div className="flex justify-between items-center max-sm:flex-col max-sm:gap-5">
+        <div className="flex-1 max-sm:w-full ">
           <p className="text-[#9EA9B3] text-sm font-medium">Our Services</p>
 
-          <p className="flex flex-col text-white font-light text-[40px]">
+          <p className="flex flex-col text-white font-light text-[40px] max-sm:text-xl max-sm:items-start ">
             Comprehensive Solutions
             <span className="font-semibold">for Your Every Need</span>
           </p>
@@ -20,7 +20,7 @@ const OurServices = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-4 gap-12 py-20 px-5">
+      <div className="grid grid-cols-4 gap-12 py-20 px-5 max-sm:grid-cols-1 max-sm:px-1 max-sm:py-10 max-sm:gap-6">
         {home_service_data?.map((item, index) => (
           <div
             className="py-8 flex flex-col gap-6 justify-center items-center border border-[#404B57] rounded-md cursor-pointer group transition-colors duration-300 hover:bg-primary"

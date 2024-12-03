@@ -3,8 +3,8 @@ import { Mail, MapPin, PhoneCall } from "lucide-react";
 
 const ContactDetails = () => {
   return (
-    <div className="grid grid-cols-3 gap-12 py-[7.5rem] padding-x">
-    <div className="bg-[#F5F8FB] rounded-md py-10 w-full flex flex-col justify-center items-center gap-5">
+    <div className="grid grid-cols-3 gap-12 py-[7.5rem] padding-x   max-sm:py-[2rem] max-sm:grid-cols-1  max-sm:gap-5">
+    <div className="bg-[#F5F8FB] rounded-md py-10 w-full flex flex-col justify-center items-center gap-5  max-sm:py-5">
       <div className="bg-primary w-[80px] h-[80px] rounded-full flex justify-center items-center">
         <MapPin color="white" size={35} />
       </div>
@@ -14,7 +14,7 @@ const ContactDetails = () => {
       </span>
     </div>
 
-    <div className="bg-[#F5F8FB] rounded-md py-10 w-full flex flex-col justify-center items-center gap-5">
+    <div className="bg-[#F5F8FB] rounded-md py-10 w-full flex flex-col justify-center items-center gap-5  max-sm:py-5">
       <div className="bg-primary w-[80px] h-[80px] rounded-full flex justify-center items-center">
         <PhoneCall color="white" size={35} />
       </div>
@@ -24,7 +24,7 @@ const ContactDetails = () => {
       </span>
     </div>
 
-    <div className="bg-[#F5F8FB] rounded-md py-10 w-full flex flex-col justify-center items-center gap-5">
+    <div className="bg-[#F5F8FB] rounded-md py-10 w-full flex flex-col justify-center items-center gap-5  max-sm:py-5">
       <div className="bg-primary w-[80px] h-[80px] rounded-full flex justify-center items-center">
         <Mail color="white" size={35} />
       </div>

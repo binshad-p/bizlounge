@@ -151,6 +151,15 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 export function Header() {
   const pathname = usePathname();
@@ -192,7 +201,7 @@ export function Header() {
           : pathname !== "/"
           ? "bg-white text-black"
           : "bg-[#1F2437B2] text-white"
-      } px-[100px] py-8 z-50 w-full font-medium fixed top-0 transition-colors duration-300`}
+      } px-[100px] py-8 z-50 w-full font-medium fixed top-0 transition-colors duration-300 max-sm:px-[2rem] `}
     >
       <div className="container mx-auto flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
@@ -201,18 +210,15 @@ export function Header() {
             width={200}
             height={200}
             alt="logo"
-            className={`${
-              !color && pathname === "/" ? "block" : "hidden"
-            }`}
+            className={`${!color && pathname === "/" ? "block" : "hidden"} `}
           />
           <Image
             src={logo_blue}
             width={200}
             height={200}
             alt="logo"
-            className={`${
-              (color || pathname !== "/") ? "block" : "hidden"
-            }`}          />
+            className={`${color || pathname !== "/" ? "block" : "hidden"}`}
+          />
         </Link>
         <div className="hidden md:flex space-x-10 ">
           {menuItems.slice(0, 2).map((item) => (
@@ -267,22 +273,58 @@ export function Header() {
         >
           Contact Us{" "}
         </Link>
-        <button className="md:hidden">
-          <svg
-            className="h-6 w-6 text-white"
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line x1="4" x2="20" y1="12" y2="12" />
-            <line x1="4" x2="20" y1="6" y2="6" />
-            <line x1="4" x2="20" y1="18" y2="18" />
-          </svg>
-        </button>
+        <div className="md:hidden">
+          <Sheet className="bg-white">
+            <SheetTrigger>
+              {" "}
+              <svg
+                className={`${
+                  color || pathname !== "/" ? "text-black" : "text-white"
+                } h-6 w-6`}
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line x1="4" x2="20" y1="12" y2="12" />
+                <line x1="4" x2="20" y1="6" y2="6" />
+                <line x1="4" x2="20" y1="18" y2="18" />
+              </svg>
+            </SheetTrigger>
+            <SheetContent className="flex flex-col items-center gap-4 justify-center">
+  <SheetHeader>
+    <SheetTitle><Image
+            src={logo_blue}
+            width={200}
+            height={200}
+            alt="logo"
+            
+          /></SheetTitle>
+  </SheetHeader>
+
+  {menuItems?.map((item) => (
+    <SheetClose asChild key={item.text}>
+      <Link
+        href={item.link}
+        className={`block px-4 py-2 text-sm ${
+          pathname === item.link
+            ? "bg-gray-200 font-bold text-primary"
+            : "text-gray-700"
+        } hover:bg-gray-100`}
+      >
+        {item.text}
+      </Link>
+    </SheetClose>
+  ))}
+
+ 
+</SheetContent>
+
+          </Sheet>
+        </div>
       </div>
     </nav>
   );

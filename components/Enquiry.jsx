@@ -38,22 +38,20 @@ const Enquiry = () => {
     <div className="padding-x ">
       <ToastContainer />
 
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-[54px]">
-          <div className="">
-            <div className="mb-4">
+      <div className=" mx-auto px-4 py-12 max-sm:px-[0rem] max-sm:py-[0rem]">
+        <div className="flex max-sm:flex-col-reverse justify-between gap-[54px] max-sm:gap-[20px]">
+            <div className="mb-4 w-1/2  max-sm:w-full">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60593.66905635171!2d55.26783101647558!3d25.223347644727326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887648eb57b26adb%3A0x38aef391b6c8f0e8!2sProworld%20Corporate%20Service%20Providers!5e0!3m2!1sen!2sin!4v1703919481295!5m2!1sen!2sin"
                 title="Google Map"
-                className="w-[90%] h-[28rem] border-0"
+                className="w-[90%] h-[28rem] border-0 max-sm:w-full max-sm:h-[18rem]"
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-          </div>
 
-          <div className=" flex flex-col gap-4">
+          <div className=" flex flex-col gap-4 w-1/2  max-sm:w-full">
             <div className="flex flex-col  mb-5">
               <p className="text-[#9EA9B3] text-sm font-medium uppercase">
                 Contact Us
@@ -114,7 +112,7 @@ const Enquiry = () => {
               <div>
                 <button
                   type="submit"
-                  className=" px-[5rem] mt-4 bg-blue-500 text-white py-3 rounded-full hover:bg-blue-600 transition font-bold"
+                  className=" px-[5rem] mt-4 bg-blue-500 text-white py-3 rounded-full hover:bg-blue-600 transition font-bold max-sm:text-sm max-sm:px-[1rem]"
                 >
                   Send Message
                 </button>

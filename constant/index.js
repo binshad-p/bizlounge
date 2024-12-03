@@ -28,24 +28,7 @@ export const home_hero_data = [
     title: "Your Gateway to Seamless Business Solutions",
     desc: "Expert Services in Visas, PRO Assistance, Emirates ID, Medical, Insurance, and Attestations.Simplifying Your Journey Every Step of the Way!",
   },
-  {
-    id: 2,
-    image: home_bg,
-    title: "Your Gateway to Seamless Business Solutions 2",
-    desc: "Expert Services in Visas, PRO Assistance, Emirates ID, Medical, Insurance, and Attestations.Simplifying Your Journey Every Step of the Way!",
-  },
-  {
-    id: 3,
-    image: home_bg,
-    title: "Your Gateway to Seamless Business Solutions 3",
-    desc: "Expert Services in Visas, PRO Assistance, Emirates ID, Medical, Insurance, and Attestations.Simplifying Your Journey Every Step of the Way!",
-  },
-  {
-    id: 4,
-    image: home_bg,
-    title: "Your Gateway to Seamless Business Solutions 4",
-    desc: "Expert Services in Visas, PRO Assistance, Emirates ID, Medical, Insurance, and Attestations.Simplifying Your Journey Every Step of the Way!",
-  },
+
 ];
 
 export const home_service_data = [

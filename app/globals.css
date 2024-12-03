@@ -27,7 +27,7 @@
 
 
 .customFadeSwiper {
-  width: 100%;
+ @apply w-full 
 }
 
 .customFadeSwiper .fade-slide {

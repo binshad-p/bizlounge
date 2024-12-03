@@ -5,9 +5,9 @@ import { logo } from "@/assets"
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1A2D39] text-[#9FAEBE] pt-20 pb-5 padding-x">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-4  gap-8">
+    <footer className="bg-[#1A2D39] text-[#9FAEBE] pt-20 pb-5 padding-x max-sm:pt-10">
+      <div className="container mx-auto px-4 max-sm:px-[0rem]">
+        <div className="grid grid-cols-4  gap-8 max-sm:grid-cols-1">
           {/* Logo and Description */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">

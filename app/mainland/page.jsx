@@ -12,7 +12,9 @@ const page = () => {
       <HeroSection />
     
       <ServiceList />
+      <div className=" pt-[4rem]">
       <Enquiry />
+      </div>
       <div className="padding-x py-[4rem]">
         <EasyConnect />
       </div>
