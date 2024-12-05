@@ -19,11 +19,11 @@ module.exports = {
 			"lavender": "var(--lavender)",
 		  },
 		  backgroundImage: {
-			service_bg: "url('../assets/service-bg.png')",
-			counter_bg: "url('../assets/counter-bg.png')",
-			frame1: "url('../assets/frame_1.svg')",
-			frame2: "url('../assets/frame_2.svg')",
-			frame3: "url('../assets/frame_3.svg')",
+			service_bg: "url('/assets/service-bg.png')",
+			counter_bg: "url('/assets/counter-bg.png')",
+			frame1: "url('/assets/frame_1.svg')",
+			frame2: "url('/assets/frame_2.svg')",
+			frame3: "url('/assets/frame_3.svg')",
 
 		  }
 
