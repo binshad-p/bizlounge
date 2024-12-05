@@ -1,4 +1,4 @@
-import { home_why_choose_us, service_logo } from "@/assets";
+import { home_why_choose_us, service_logo } from "/assets";
 import EasyConnect from "@/components/EasyConnect";
 import Enquiry from "@/components/Enquiry";
 import Banner from "@/containers/Freezone/Banner";

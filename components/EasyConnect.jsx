@@ -1,4 +1,4 @@
-import { whatsapp_icon } from "@/assets";
+import { whatsapp_icon } from "/assets";
 import { Mail, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import React from "react";
