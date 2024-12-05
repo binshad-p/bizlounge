@@ -5,9 +5,9 @@ import { home_why_choose_us } from "@/assets";
 const HeroSection = () => {
   return (
     <div>
-         <div className="padding-x py-[5rem] flex flex-col justify-between items-center gap-6 w-full max-sm:py-[2rem]">
-        <div className="flex justify-between  max-sm:flex-col max-sm:gap-5">
-          <div className="w-[50%] max-sm:w-full">
+         <div className="padding-x py-[5rem] flex flex-col justify-between items-center gap-6 w-full max-sm:py-[5rem] sm:max-lg:py-[3rem]">
+        <div className="flex justify-between  max-sm:flex-col sm:max-lg:flex-col sm:max-lg:gap-5 max-sm:gap-5">
+          <div className="w-[50%] max-sm:w-full sm:max-lg:w-full">
             <div className="flex flex-col gap-4 mt-4">
               <p className=" text-[#2D3845] text-[22px] font-light max-sm:text-lg">
                 Offshore Licenses in Dubai: Unlocking Global Growth and
@@ -47,7 +47,7 @@ const HeroSection = () => {
               alt="free-zone-img"
               width={400}
               height={400}
-              className="h-[400px] w-[400px] object-cover max-sm:h-[200px]"
+              className="h-[400px] w-[400px] object-cover max-sm:h-[200px] sm:max-lg:w-[100vw]"
             />
           </div>
         </div>

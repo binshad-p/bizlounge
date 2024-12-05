@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ServiceList = () => {
   return (
-    <div className="padding-x py-[5rem] bg-service_bg flex flex-col justify-center items-center max-sm:py-[2rem] bg-no-repeat bg-cover">
+    <div className="padding-x py-[5rem] bg-service_bg flex flex-col justify-center items-center max-sm:py-[5rem] bg-no-repeat bg-cover sm:max-lg:py-[3rem]">
     <div className="grid grid-cols-2 gap-12 py-20 px-5 max-sm:py-10 max-sm:grid-cols-1 max-sm:px-1">
       {mainland_service_data?.map((item, index) => (
         <div

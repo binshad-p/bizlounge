@@ -11,14 +11,14 @@ import { UserRound } from "lucide-react";
 
 const Testmonial = () => {
   return (
-    <div className="flex flex-col items-center justify-center padding-x py-[7.5rem] max-sm:flex-col max-sm:py-[2rem]">
+    <div className="flex flex-col items-center justify-center padding-x py-[7.5rem] max-sm:flex-col max-sm:py-[5rem]">
       <div className="max-sm:w-full">
         <p className="uppercase text-sm text-[#B2B8BF] font-medium text-center max-sm:text-start">
           Testimonials
         </p>
-        <p className="flex   font-light text-[40px] max-sm:text-xl max-sm:flex-col">
+        <p className="flex font-light text-[40px] max-sm:text-2xl max-sm:flex-col">
           knows About &nbsp;
-          <span className="font-semibold "> Our Customer Say</span>
+          <span className="font-semibold"> Our Customer Say</span>
         </p>
       </div>
 
@@ -34,20 +34,37 @@ const Testmonial = () => {
           pagination={{
             clickable: true,
           }}
-        
+          breakpoints={{
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            // when window width is >= 1024px
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+          }}
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
-          <SwiperSlide className="">
-            <div className="flex flex-col gap-5 bg-[#F5F8FB] p-7 rounded-lg ">
+   
+
+          <SwiperSlide>
+            <div className="flex flex-col gap-5 bg-[#F5F8FB] p-7 rounded-lg">
               <div className="flex items-center gap-2">
                 <div className="w-[80px] h-[80px] rounded-full flex justify-center items-center bg-[#2D3845]">
-
-                <UserRound size={40} color="white"/>
+                  <UserRound size={40} color="white" />
                 </div>
                 <div className="flex flex-col">
-                  <p className="text-primary text-lg">Henry Morgan</p>
-                  <p className="text-[#909AA4] text-sm font-light">Canada</p>
+                  <p className="text-primary text-lg">Jane Doe</p>
+                  <p className="text-[#909AA4] text-sm font-light">USA</p>
                 </div>
               </div>
               <p className="text-[#898A9C] text-sm font-light">
@@ -57,7 +74,6 @@ const Testmonial = () => {
               </p>
             </div>
           </SwiperSlide>
-         
         </Swiper>
       </div>
     </div>

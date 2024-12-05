@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <div className="padding-x py-[5rem] flex justify-between items-center gap-6 w-full max-sm:flex-col max-sm:py-[2rem]">
-    <div className="w-[50%] max-sm:w-full">
+    <div className="padding-x py-[5rem] flex justify-between items-center gap-6 w-full max-sm:flex-col max-sm:py-[5rem] sm:max-lg:flex-col sm:max-lg:py-[3rem]">
+    <div className="w-[50%] max-sm:w-full sm:max-lg:w-full">
       <div className="flex flex-col gap-4 mt-4">
         <p className=" text-[#2D3845] text-[22px] font-light max-sm:text-lg">
           Dubai mainland license helps a company reap the maximum benefits
@@ -49,7 +49,7 @@ const HeroSection = () => {
         alt="free-zone-img"
         width={400}
         height={400}
-        className="h-[400px] w-[400px] object-cover max-sm:h-[200px]"
+        className="h-[400px] w-[400px] object-cover max-sm:h-[200px] sm:max-lg:w-[100vw]"
       />
     </div>
   </div>

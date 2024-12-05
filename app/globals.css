@@ -22,7 +22,7 @@
 }
 
 .padding-x {
-  @apply px-[10rem] lg:max-2xl:px-[7rem] sm:max-lg:px-[5rem] max-sm:px-[2rem];
+  @apply px-[10rem] lg:max-2xl:px-[3rem] sm:max-lg:px-[2rem] max-sm:px-[1rem];
 }
 
 
@@ -57,14 +57,14 @@
 
 /* Active Tab Styling */
 .data-\[state\=active\]\:shadow[data-state="active"] {
-  @apply bg-primary text-white py-4 px-6 font-medium rounded-none w-[20rem] flex justify-start relative;
+  @apply bg-primary text-white py-4 px-6 font-medium rounded-none w-[20rem] max-sm:px-2 flex justify-start relative max-sm:w-[10rem];
 }
 
 
 
 /* Inactive Tab Styling */
 .data-\[state\=active\]\:shadow[data-state="inactive"] {
-  @apply bg-[#F5F8FB] text-black py-4 px-6 font-medium rounded-none w-[20rem] flex justify-start border-b border-[#E5E8EF];
+  @apply bg-[#F5F8FB] text-black py-4 px-6 font-medium rounded-none w-[20rem]   max-sm:px-2 flex justify-start border-b border-[#E5E8EF] max-sm:w-[10rem];
 }
 
 

@@ -201,7 +201,7 @@ export function Header() {
           : pathname !== "/"
           ? "bg-white text-black"
           : "bg-[#1F2437B2] text-white"
-      } px-[100px] py-8 z-50 w-full font-medium fixed top-0 transition-colors duration-300 max-sm:px-[2rem] `}
+      } px-[100px] py-8 z-50 w-full font-medium fixed top-0 transition-colors duration-300 max-sm:px-[2rem] lg:max-2xl:px-[5rem] `}
     >
       <div className="container mx-auto flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
@@ -220,7 +220,7 @@ export function Header() {
             className={`${color || pathname !== "/" ? "block" : "hidden"}`}
           />
         </Link>
-        <div className="hidden md:flex space-x-10 ">
+        <div className="sm:max-lg:hidden max-sm:hidden flex space-x-10 ">
           {menuItems.slice(0, 2).map((item) => (
             <Link
               key={item.text}
@@ -263,7 +263,7 @@ export function Header() {
         </div>
         <Link
           href="/contact"
-          className={`hidden md:inline-flex  px-6 py-3 border rounded-3xl text-sm font-bold ${
+          className={` sm:max-lg:hidden  max-sm:hidden  flex  px-6 py-3 border rounded-3xl text-sm font-bold ${
             pathname === "/contact"
               ? "text-primary border-primary"
               : "" || pathname !== "/"
@@ -273,7 +273,7 @@ export function Header() {
         >
           Contact Us{" "}
         </Link>
-        <div className="md:hidden">
+        <div className="hidden sm:max-lg:block max-sm:block">
           <Sheet className="bg-white">
             <SheetTrigger>
               {" "}

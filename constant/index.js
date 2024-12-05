@@ -127,11 +127,7 @@ export const counter_data = [
     count: "4578 +",
     title: "Trusted Clients ",
   },
-  {
-    id: 2,
-    count: "150 +",
-    title: "Countries ",
-  },
+
   {
     id: 3,
     count: "8 +",
