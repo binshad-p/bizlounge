@@ -13,7 +13,7 @@
 //   Divider,
 // } from "@nextui-org/react";
 // import Image from "next/image";
-// import { Facebook, Instagram, logoo, Whatsapp, Youtube } from "/assets";
+// import { Facebook, Instagram, logoo, Whatsapp, Youtube } from "@public/assets";
 // import { usePathname } from "next/navigation";
 
 // const Header = () => {
@@ -146,7 +146,7 @@
 "use client";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
-import { logo, logo_blue } from "/assets";
+import { logo, logo_blue } from "@public/assets";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { usePathname } from "next/navigation";

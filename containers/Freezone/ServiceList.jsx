@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image";
-import {  service_logo } from "/assets";
+import {  service_logo } from "@public/assets";
 
 const ServiceList = () => {
   return (

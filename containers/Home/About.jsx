@@ -1,4 +1,4 @@
-import { home_about_1, home_about_2 } from "/assets";
+import { home_about_1, home_about_2 } from "@public/assets";
 import Image from "next/image";
 
 const About = () => {

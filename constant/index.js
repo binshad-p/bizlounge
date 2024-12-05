@@ -20,7 +20,7 @@ import {
   service_icon_white_6,
   service_icon_white_7,
   service_icon_white_8,
-} from "/assets";
+} from "@public/assets";
 export const home_hero_data = [
   {
     id: 1,
