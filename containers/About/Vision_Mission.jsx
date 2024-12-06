@@ -1,4 +1,4 @@
-import { our_mission, our_vision } from "@public/assets";
+import { our_mission, our_vision } from "@/public/assets";
 import Image from "next/image";
 
 const Vision_Mission = () => {
