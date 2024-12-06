@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from "next/image";
-import { home_bg } from "@public/assets";
 import { CircleCheckBig } from "lucide-react";
 import { serviceData2, serviceData3, serviceData4 } from "@/constant";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { home_bg } from '@/public/assets';
 
 const TabSection = () => {
   return (

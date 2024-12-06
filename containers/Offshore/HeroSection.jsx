@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image";
-import { home_why_choose_us } from "@public/assets";
+import { home_why_choose_us } from '@/public/assets';
 
 const HeroSection = () => {
   return (
