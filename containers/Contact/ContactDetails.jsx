@@ -10,7 +10,7 @@ const ContactDetails = () => {
       </div>
       <p className="text-[#2D3845] text-xl font-semibold">Our Address</p>
       <span className="text-[#5D6975] font-light w-[60%] text-center">
-        51 Somestreet Cambridge, CB4 3AA, United Kingdom
+      2701,The Exchange Tower, Business Bay, Dubai, UAE
       </span>
     </div>
 
@@ -20,7 +20,8 @@ const ContactDetails = () => {
       </div>
       <p className="text-[#2D3845] text-xl font-semibold">Phone Number</p>
       <span className="text-[#5D6975] font-light w-[90%] text-center">
-        Mobile: (+88) 090 1900 – 6886 <br /> Mobile: (+88) 090 1900 – 6886
+        Mobile: +971 544702611 <br /> Landphone: +971 42638774
+
       </span>
     </div>
 
@@ -30,8 +31,8 @@ const ContactDetails = () => {
       </div>
       <p className="text-[#2D3845] text-xl font-semibold">Email Address</p>
       <span className="text-[#5D6975] font-light  text-center">
-        info@example.com <br />
-        info@example.com
+        info@bizloungeglobal.com <br />
+       
       </span>
     </div>
   </div>

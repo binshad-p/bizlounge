@@ -13,17 +13,18 @@ const EasyConnect = () => {
       <div className="grid grid-cols-3 gap-5 max-sm:grid-cols-1 max-sm:mt-10">
         <div className="flex flex-col justify-center items-center gap-3  border-r-2 border-dashed border-white pr-5 max-sm:border-r-0 max-sm:border-b-2 max-sm:pb-5">
           <PhoneCall size={40}/>
-          <p className="text-lg font-semibold mb-0 lg:max-2xl:text-base sm:max-lg:text-sm sm:max-lg:min-w-max">+01 123 456 7890</p>
+          <p className="text-lg font-semibold mb-0 lg:max-2xl:text-base sm:max-lg:text-sm sm:max-lg:min-w-max">+971 544702611</p>
           <span className="text-sm font-light">Call Us Now !</span>
         </div>
         <div className="flex flex-col justify-center items-center gap-3  border-r-2 border-dashed border-white pr-5 max-sm:border-r-0 max-sm:border-b-2 max-sm:pb-5">
         <Mail size={40} />
-        <p className="text-lg font-semibold mb-0 lg:max-2xl:text-base sm:max-lg:text-sm">info@example.com</p>
+        <p className="text-lg font-semibold mb-0 lg:max-2xl:text-base sm:max-lg:text-sm">info@bizloungeglobal.com
+        </p>
           <span className="text-sm font-light">Drop Us a Line</span>
         </div>
         <div className="flex flex-col justify-center items-center gap-3  ">
         <Image src={whatsapp_icon} alt="whats app " width={40} height={40}/>
-        <p className="text-lg font-semibold mb-0 lg:max-2xl:text-base sm:max-lg:text-sm">(+01) 123 456 7890</p>
+        <p className="text-lg font-semibold mb-0 lg:max-2xl:text-base sm:max-lg:text-sm">+971 544702611</p>
           <span className="text-sm font-light">Chat on WhatsApp</span>
         </div>
       </div>

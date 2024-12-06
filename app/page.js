@@ -23,7 +23,7 @@ export default function Home() {
       <OurServices />
       <WhyChooseUs />
       <Counter />
-      <Testmonial />
+      {/* <Testmonial /> */}
       <LinkedWith />
       <div className="pb-[5rem]">
         <Enquiry />

@@ -9,12 +9,12 @@ const WhoWeAre = () => {
         </p>
       </div>
       <p className="flex-1 text-[#898A9C] text-[15px] font-light sm:max-lg:text-sm">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took.Lorem Ipsum is simply
-        dummy text of the printing and typesetting industry. Lorem Ipsum has
-        been the industry's standard dummy text ever since the 1500s, when an
-        unknown printer took.
+        Bizlounge has been a leading business setup advisor in the UAE, offering
+        end-to-end solutions for entrepreneurs and SMEs. We specialize in
+        licensing, visa services, and tailored consultancy to ensure a seamless
+        business setup experience. With a focus on cost-effective and reliable
+        services, we help businesses grow and succeed in the UAE's dynamic
+        market.
       </p>
     </div>
   );

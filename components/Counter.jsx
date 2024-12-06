@@ -1,4 +1,5 @@
 import { counter_data } from "@/constant";
+import Link from "next/link";
 
 const Counter = () => {
   return (
@@ -8,9 +9,11 @@ const Counter = () => {
           Your Trusted Partner in
           <span className="font-semibold">Business and Beyond</span>
         </p>
+        <Link href="/contact">
         <button className="border border-white px-8 py-3 rounded-3xl text-white font-bold">
           Get in Touch!
         </button>
+        </Link>
       </div>
       <div className="grid grid-cols-4 gap-24 mt-[60px] max-sm:grid-cols-2 max-sm:gap-5 max-sm:mt-[20px] sm:max-lg:grid-cols-2">
         {counter_data?.map((item, index) => (

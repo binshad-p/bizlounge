@@ -3,26 +3,19 @@
 
 import React, { Suspense } from "react";
 import "./globals.css";
-// import { Figtree } from "next/font/google";
-// import PropTypes from "prop-types";
-// import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
 import Footer from "@/components/Footer";
-// import Script from "next/script";
-// import { Toaster } from "react-hot-toast";
-// import { NextUIProvider } from "@nextui-org/react";
-// import Loading from "./loading";
 
-// export const metadata = {
-//   title: "Uslot | Know your self , then educate",
-//   description:
-//     "Our programme offers personalized one-on-one and group mentoring with dedicated teachers and mentors for every student. Covering academics, non-academics, and 'Your Choice' courses, we provide flexible learning for KG to 12th grade. Discover a world of learning tailored to your passions and needs",
-// };
+import {DM_Sans} from "next/font/google"
 
-// const figTree = Figtree({
-//   subsets: ["latin"],
-//   display: "swap",
-// });
+const dmSams = DM_Sans(
+  {
+    weight: ["100","200","300","400","500","600","700","800"],
+    subsets: ["latin"],
+    display: "swap",
+    variable: "--font-dm-sans",
+  }
+)
 
 export default function RootLayout({ children }) {
   return (
@@ -40,10 +33,8 @@ export default function RootLayout({ children }) {
             gtag('js', new Date());   gtag('config', 'G-0D5B53DLFG');`}
         </Script> */}
       </head>
-      {/* <body className={figTree.className}> */}
-      <body >
+      <body className={`${dmSams.className} antialiased`} >
           <Header />
-          {/* <Suspense fallback={<Loading />}>{children}</Suspense> */}
           <Suspense >{children}</Suspense>
           <Footer />
       </body>
@@ -51,6 +42,3 @@ export default function RootLayout({ children }) {
   );
 }
 
-// RootLayout.propTypes = {
-//   children: PropTypes.node.isRequired,
-// };

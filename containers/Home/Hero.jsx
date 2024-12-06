@@ -47,6 +47,7 @@ const Hero = () => {
                 alt="Slide image"
                 width={800}
                 height={600}
+                unoptimized
                 className="relative w-full max-sm:h-[100vh] lg:max-2xl:h-[100vh] sm:max-lg:h-[100vh] object-cover hero_img"
               />
             </div>

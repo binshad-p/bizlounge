@@ -16,8 +16,7 @@ export default function Footer() {
         </Link>
             </div>
             <p className="text-sm text-slate-400">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
-            </p>
+            Bizlounge is a trusted provider of comprehensive business solutions in the UAE, offering expert services in company formation, visa processing, PRO services, and more.            </p>
             <div className="flex space-x-4">
               <Link href="#" className="hover:text-white">
                 <Facebook className="h-5 w-5" />
@@ -39,27 +38,37 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">QUICK LINKS</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-sm hover:text-white">
+                <Link href="/" className="text-sm hover:text-white">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm hover:text-white">
+                <Link href="about" className="text-sm hover:text-white">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm hover:text-white">
+                <Link href="/services" className="text-sm hover:text-white">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm hover:text-white">
-                  Licenses
+                <Link href="free-zone" className="text-sm hover:text-white">
+                  Free Zone
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm hover:text-white">
+                <Link href="/mainland" className="text-sm hover:text-white">
+                  Mainland
+                </Link>
+              </li>
+              <li>
+                <Link href="/offshore" className="text-sm hover:text-white">
+                  Offshore
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-sm hover:text-white">
                   Contact Us
                 </Link>
               </li>
@@ -71,32 +80,32 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">SERVICES</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-sm hover:text-white">
+                <Link href="/services" className="text-sm hover:text-white">
                   Company set up
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm hover:text-white">
+                <Link href="/services" className="text-sm hover:text-white">
                   Pro services
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm hover:text-white">
+                <Link href="/services" className="text-sm hover:text-white">
                   Visa & licensing
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm hover:text-white">
+                <Link href="/services" className="text-sm hover:text-white">
                   Trade mark registration
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm hover:text-white">
+                <Link href="/services" className="text-sm hover:text-white">
                   Translation services
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm hover:text-white">
+                <Link href="/services" className="text-sm hover:text-white">
                   Documents Attestation
                 </Link>
               </li>
@@ -110,18 +119,16 @@ export default function Footer() {
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 mt-0.5" />
                 <span className="text-sm">
-                  Address
-                  
-                  201New York 10010, US
+                2701,The Exchange Tower, Business Bay, Dubai, UAE
                 </span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5" />
-                <span className="text-sm">(+01) 123 456 7890</span>
+                <span className="text-sm"> +971 544702611</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5" />
-                <span className="text-sm">info@example.com</span>
+                <span className="text-sm">info@bizloungeglobal.com </span>
               </li>
             </ul>
           </div>

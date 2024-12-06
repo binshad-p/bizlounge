@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image";
-import { home_why_choose_us } from '@/public/assets';
+import { home_why_choose_us, mainland_img } from '@/public/assets';
 
 const HeroSection = () => {
   return (
@@ -45,11 +45,12 @@ const HeroSection = () => {
 
     <div className=" relative ">
       <Image
-        src={home_why_choose_us}
-        alt="free-zone-img"
+        src={mainland_img}
+        alt="mainland_img"
         width={400}
         height={400}
-        className="h-[400px] w-[400px] object-cover max-sm:h-[200px] sm:max-lg:w-[100vw]"
+        unoptimized
+        className="h-[400px] w-[500px] object-cover max-sm:h-[200px] sm:max-lg:w-[100vw]"
       />
     </div>
   </div>

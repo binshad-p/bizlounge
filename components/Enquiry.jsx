@@ -42,7 +42,7 @@ const Enquiry = () => {
         <div className="flex max-sm:flex-col-reverse sm:max-lg:flex-col-reverse justify-between gap-[54px] max-sm:gap-[20px]">
             <div className="mb-4 w-1/2  max-sm:w-full sm:max-lg:w-full">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60593.66905635171!2d55.26783101647558!3d25.223347644727326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887648eb57b26adb%3A0x38aef391b6c8f0e8!2sProworld%20Corporate%20Service%20Providers!5e0!3m2!1sen!2sin!4v1703919481295!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.498780741067!2d55.2601053!3d25.1863966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f690046d1306f%3A0xa4656ea6020414b4!2z2YXYudio2LEg2YXYtNin2Kkg2KfZhNiu2YTZitisINin2YTYqtis2KfYsdmK!5e0!3m2!1sen!2sin!4v1733508765471!5m2!1sen!2sin"
                 title="Google Map"
                 className="w-[90%] h-[28rem] border-0 max-sm:w-full sm:max-lg:w-full max-sm:h-[18rem]"
                 allowFullScreen=""

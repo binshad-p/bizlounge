@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
-import { home_service_data } from "@/constant";
+import {  LinkedWithData } from "@/constant";
 
 const LinkedWith = () => {
   return (
-    <div className="bg-[#F5F8FB] py-[7rem] mb-[5rem] max-sm:py-[5rem]">
+    <div className="bg-[#fff] py-[7rem] mb-[5rem] max-sm:py-[5rem]">
       <div className="container mx-auto px-4">
         <div className="flex flex-col justify-center items-center gap-3 mb-10 max-sm:items-start">
           <p className="uppercase text-sm text-[#B2B8BF] font-medium text-center">
@@ -20,7 +20,7 @@ const LinkedWith = () => {
 
         <Marquee>
           <div className="flex space-x-10 ">
-            {home_service_data?.map((item,index) => (
+            {LinkedWithData?.map((item,index) => (
               <Image
                 src={item?.image}
                 alt="logo1"
@@ -30,7 +30,7 @@ const LinkedWith = () => {
                 className="w-auto h-20 "
               />
             ))}
-            {home_service_data?.map((item,index) => (
+            {LinkedWithData?.map((item,index) => (
               <Image
                 src={item?.image}
                 alt="logo1"
