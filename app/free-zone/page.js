@@ -1,10 +1,8 @@
-import { home_why_choose_us, service_logo } from "@public/assets";
 import EasyConnect from "@/components/EasyConnect";
 import Enquiry from "@/components/Enquiry";
 import Banner from "@/containers/Freezone/Banner";
 import HeroSection from "@/containers/Freezone/HeroSection";
 import ServiceList from "@/containers/Freezone/ServiceList";
-import Image from "next/image";
 import React from "react";
 
 const page = () => {
