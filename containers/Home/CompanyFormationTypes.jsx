@@ -1,4 +1,4 @@
-import { certificate, certificate_blue } from "@public/assets";
+import { certificate, certificate_blue } from "@/public/assets";
 import { ShieldCheck } from "lucide-react";
 import Image from "next/image";
 

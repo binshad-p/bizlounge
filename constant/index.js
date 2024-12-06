@@ -1,26 +1,5 @@
-import {
-  home_bg,
-  main_land_service_icon_white_1,
-  main_land_service_icon_white_2,
-  main_land_service_icon_white_3,
-  main_land_service_icon_white_4,
-  service_icon_blue_1,
-  service_icon_blue_2,
-  service_icon_blue_3,
-  service_icon_blue_4,
-  service_icon_blue_5,
-  service_icon_blue_6,
-  service_icon_blue_7,
-  service_icon_blue_8,
-  service_icon_white_1,
-  service_icon_white_2,
-  service_icon_white_3,
-  service_icon_white_4,
-  service_icon_white_5,
-  service_icon_white_6,
-  service_icon_white_7,
-  service_icon_white_8,
-} from "@public/assets";
+import { home_bg, main_land_service_icon_white_1, main_land_service_icon_white_2, main_land_service_icon_white_3, main_land_service_icon_white_4, service_icon_blue_1, service_icon_blue_2, service_icon_blue_3, service_icon_blue_4, service_icon_blue_5, service_icon_blue_6, service_icon_blue_7, service_icon_blue_8, service_icon_white_1, service_icon_white_2, service_icon_white_3, service_icon_white_4, service_icon_white_5, service_icon_white_6, service_icon_white_7, service_icon_white_8 } from "@/public/assets";
+
 export const home_hero_data = [
   {
     id: 1,

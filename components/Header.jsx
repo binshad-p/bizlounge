@@ -146,7 +146,6 @@
 "use client";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
-import { logo, logo_blue } from "@public/assets";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -160,6 +159,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { logo, logo_blue } from "@/public/assets";
 
 export function Header() {
   const pathname = usePathname();
