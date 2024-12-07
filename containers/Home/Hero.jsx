@@ -22,7 +22,7 @@ const Hero = () => {
         effect={"fade"}
         slidesPerView={1} // Show one slide at a time
         autoplay={{
-          delay: 2000,
+          delay: 5000,
           disableOnInteraction: true,
         }}
         pagination={{

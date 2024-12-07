@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from "next/image";
 import { service_logo } from '@/public/assets';
+import { freezoneServiceData } from '@/constant';
 
 const ServiceList = () => {
   return (
@@ -17,23 +18,21 @@ const ServiceList = () => {
     </div>
 
     <div className="grid grid-cols-5 gap-10 mt-12 max-sm:grid-cols-2 max-sm:gap-3 sm:max-lg:grid-cols-4">
-      <div className="bg-white p-7 rounded-lg flex justify-center items-center">
+      {
+        freezoneServiceData?.map((item,index)=>(
+
+      <div className="bg-white p-7 rounded-lg flex justify-center items-center" key={index}>
         <Image
-          src={service_logo}
+          src={item?.image}
           alt="service logo"
           width={80}
           height={80}
           className="h-20"
         />
       </div>
-      <div className="bg-white p-7 rounded-lg flex justify-center items-center">
-        <Image
-          src={service_logo}
-          alt="service logo"
-          width={80}
-          height={80}
-        />
-      </div>
+        ))
+      }
+
     </div>
   </div>
   )

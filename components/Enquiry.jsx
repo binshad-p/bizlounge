@@ -13,25 +13,34 @@ const Enquiry = () => {
     e.preventDefault();
 
     emailjs
-    //   .sendForm(
-    //     "service_rt92ui9",
-    //     "template_iuy7e2e",
-    //     form.current,
-    //     "W-UOitNd8cs3Lltwk"
-    //   )
-      .then(
-        (result) => {
-          console.log(result.text);
-
+      .sendForm(
+        "service_zphsnaw",
+        "template_zuhd2q4",
+        form.current,
+        "hglgJJcVwSvmNjWSh"
+      )
+      .then((result) => {
+        console.log(result.text);
+      
+        // Reset the form
+        if (form && form.current) {
           form.current.reset();
-          toast.success("Submit Successfully!", {
-            position: toast.POSITION.TOP_RIGHT,
-          });
-        },
-        (error) => {
-          console.log(error.text);
         }
-      );
+      
+        // Display success toast message
+        toast.success("Submitted Successfully!", {
+          position: "top-right", // Correct usage for toast position
+        });
+      })
+      .catch((error) => {
+        console.error("Submission failed:", error);
+      
+        // Display error toast message (optional for handling errors)
+        toast.error("Submission failed. Please try again.", {
+          position: "top-right",
+        });
+      });
+      
   };
 
   return (
