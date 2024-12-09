@@ -5,7 +5,6 @@ import {
   home_bg_3,
   icon_1,
   icon_10,
-
   icon_13,
   icon_14,
   icon_15,
@@ -220,14 +219,26 @@ export const LinkedWithData = [
 export const serviceData1 = [
   {
     id: "1",
-    image:service_1,
+    image: service_1,
     title: "Company Formation",
     Description:
       "At Bizlounge, we provide expert company formation services in the UAE, including Mainland, Free Zone, and Offshore setups. Our team ensures a smooth process, handling all legal and licensing requirements. Benefit from full ownership, tax exemptions, and access to global markets. Let us help you establish your business efficiently and compliantly in the UAE.",
     subService: [
-      { sub_service: "Main Land Company Formation" ,link :"/mainland"},
-      { sub_service: "Free zone Company Formation",link :"/free-zone" },
-      { sub_service: "Offshore Company Formation" ,link :"/offshore"},
+      {
+        sub_service: "Main Land Company Formation",
+        whatsappMessage:
+          "Hi Bizlounge, I want to enquire about Main Land Company Formation",
+      },
+      {
+        sub_service: "Free Zone Company Formation",
+        whatsappMessage:
+          "Hi Bizlounge, I want to enquire about Free Zone Company Formation",
+      },
+      {
+        sub_service: "Offshore Company Formation",
+        whatsappMessage:
+          "Hi Bizlounge, I want to enquire about Offshore Company Formation",
+      },
     ],
   },
 ];
@@ -235,60 +246,132 @@ export const serviceData1 = [
 export const serviceData2 = [
   {
     id: "2",
-    image:service_2,
+    image: service_2,
     title: "Visa Services",
     Description:
       "we offer a range of visa services to meet your personal and business needs in the UAE. Our services include Golden Visa, Investor/Partner Visa, Employment Visa, Family Visa, Domestic Worker Visa, Tourist Visa, Virtual Work Visa, and Mission Visa. We handle all application processes, ensuring quick and hassle-free approvals. Trust us to assist you with securing the right visa for your UAE journey.",
 
     subService: [
-      { sub_service: "Golden Visa Services" },
-      { sub_service: "Investor Visa Services" },
-      { sub_service: "Employment Visa Services" },
-      { sub_service: "Family Visa Services" },
-      { sub_service: "Domestic Worker Visa Services" },
-      { sub_service: "Tourist Visa Services" },
-      { sub_service: "Virtual Work  Visa Services" },
-      { sub_service: "Mission Visa Services" },
+      {
+        sub_service: "Golden Visa Services",
+        whatsappMessage:
+          "Hi Bizlounge,I want to enquire about Golden Visa Services",
+      },
+      {
+        sub_service: "Investor Visa Services",
+        whatsappMessage:
+          "Hi Bizlounge,I want to enquire about Investor Visa Services",
+      },
+      {
+        sub_service: "Employment Visa Services",
+        whatsappMessage:
+          "Hi Bizlounge,I want to enquire about Employment Visa Services",
+      },
+      {
+        sub_service: "Family Visa Services",
+        whatsappMessage:
+          "Hi Bizlounge,I want to enquire about Family Visa Services",
+      },
+      {
+        sub_service: "Domestic Worker Visa Services",
+        whatsappMessage:
+          "Hi Bizlounge,I want to enquire about Domestic Worker Visa Services",
+      },
+      {
+        sub_service: "Tourist Visa Services",
+        whatsappMessage:
+          "Hi Bizlounge,I want to enquire about Tourist Visa Services",
+      },
+      {
+        sub_service: "Virtual Work Visa Services",
+        whatsappMessage:
+          "Hi Bizlounge,I want to enquire about Virtual Work Visa Services",
+      },
+      {
+        sub_service: "Mission Visa Services",
+        whatsappMessage:
+          "Hi Bizlounge,I want to enquire about Mission Visa Services",
+      },
     ],
   },
 ];
 export const serviceData3 = [
   {
     id: "3",
-    image:service_3,
+    image: service_3,
     title: "PRO Services",
     Description:
       "We offer a wide range of PRO services to help businesses manage their legal and administrative tasks in the UAE. Our services include Labour & Immigration Department assistance, Local Agent support, Company Bank Account opening, VAT and Corporate Tax Registration, Company Liquidation, Municipality Approvals, and Health & Vehicle Insurance. With our professional guidance, we ensure seamless compliance and smooth operations, allowing you to focus on growing your business in the UAE.",
     subService: [
-      { sub_service: "Labour & Immigration Department Services" },
-      { sub_service: "Local Agent Assistance" },
-      { sub_service: "Company Bank Account opening Assistance" },
-      { sub_service: "Vat and Corporate Tax Registration" },
-      { sub_service: "Company Liquidation" },
-      { sub_service: "Municipality Approvals" },
-      { sub_service: "Health and Vehicle Insurance services" },
+      {
+        sub_service: "Labour & Immigration Department Services",
+        whatsappMessage:
+          "Hi Bizlounge, I want to enquire about Labour & Immigration Department Services",
+      },
+      {
+        sub_service: "Local Agent Assistance",
+        whatsappMessage:
+          "Hi Bizlounge, I want to enquire about Local Agent Assistance",
+      },
+      {
+        sub_service: "Company Bank Account Opening Assistance",
+        whatsappMessage:
+          "Hi Bizlounge, I want to enquire about Company Bank Account Opening Assistance",
+      },
+      {
+        sub_service: "VAT and Corporate Tax Registration",
+        whatsappMessage:
+          "Hi Bizlounge, I want to enquire about VAT and Corporate Tax Registration",
+      },
+      {
+        sub_service: "Company Liquidation",
+        whatsappMessage:
+          "Hi Bizlounge, I want to enquire about Company Liquidation",
+      },
+      {
+        sub_service: "Municipality Approvals",
+        whatsappMessage:
+          "Hi Bizlounge, I want to enquire about Municipality Approvals",
+      },
+      {
+        sub_service: "Health and Vehicle Insurance Services",
+        whatsappMessage:
+          "Hi Bizlounge, I want to enquire about Health and Vehicle Insurance Services",
+      },
     ],
   },
 ];
 export const serviceData4 = [
   {
     id: "4",
-    image:service_4,
+    image: service_4,
     title: "Document Attestation & Translation Services",
     Description:
       "We provide professional Document Attestation & Translation Services to ensure your documents are legally recognized in the UAE. Our services include Commercial Certificate Attestation, Educational Certificate Attestation, Personal Certificate Attestation, and Legal and Certified Translation. We ensure quick and reliable processing, making sure your documents meet all necessary legal requirements for use in the UAE. Trust us to handle your attestation and translation needs efficiently and accurately.",
-    subService: [
-      { sub_service: "Commercial Certificate Attestation" },
-      { sub_service: "Educational Certificate Attestation" },
-      { sub_service: "Personal Certificate Attestation" },
-      { sub_service: "Legal and Certified Translation" },
-    ],
+      subService : [
+        { 
+          sub_service: "Commercial Certificate Attestation", 
+          whatsappMessage: "Hi Bizlounge, I want to enquire about Commercial Certificate Attestation" 
+        },
+        { 
+          sub_service: "Educational Certificate Attestation", 
+          whatsappMessage: "Hi Bizlounge, I want to enquire about Educational Certificate Attestation" 
+        },
+        { 
+          sub_service: "Personal Certificate Attestation", 
+          whatsappMessage: "Hi Bizlounge, I want to enquire about Personal Certificate Attestation" 
+        },
+        { 
+          sub_service: "Legal and Certified Translation", 
+          whatsappMessage: "Hi Bizlounge, I want to enquire about Legal and Certified Translation" 
+        },
+      ]
   },
 ];
 export const serviceData5 = [
   {
     id: "4",
-    image:service_5,
+    image: service_5,
     title: "Trade Mark Registration",
     Description:
       "Bizlounge offers expert Trademark Registration services to help protect your brand and intellectual property in the UAE. Our team guides you through the entire process, from trademark search and application to registration, ensuring that your brand is legally safeguarded. With our deep understanding of UAE trademark laws, we ensure a smooth and efficient registration process, helping you secure exclusive rights to your brand. Protect your business identity and enhance your market presence with Bizlounge’s Trademark Registration services.",
@@ -296,27 +379,24 @@ export const serviceData5 = [
   },
 ];
 
-
 export const freezoneServiceData = [
-  {image :icon_1},
-  {image :icon_2},
-  {image :icon_3},
-  {image :icon_4},
-  {image :icon_5},
-  {image :icon_6},
-  {image :icon_7},
-  {image :icon_8},
-  {image :icon_9},
-  {image :icon_10},
-  {image :icon_13},
-  {image :icon_14},
-  {image :icon_15},
-  {image :icon_16},
-  {image :icon_17},
-  {image :icon_18},
-  {image :icon_19},
-  {image :icon_20},
-  {image :icon_21},
-
-
-]
+  { image: icon_1 },
+  { image: icon_2 },
+  { image: icon_3 },
+  { image: icon_4 },
+  { image: icon_5 },
+  { image: icon_6 },
+  { image: icon_7 },
+  { image: icon_8 },
+  { image: icon_9 },
+  { image: icon_10 },
+  { image: icon_13 },
+  { image: icon_14 },
+  { image: icon_15 },
+  { image: icon_16 },
+  { image: icon_17 },
+  { image: icon_18 },
+  { image: icon_19 },
+  { image: icon_20 },
+  { image: icon_21 },
+];
