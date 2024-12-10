@@ -1,6 +1,6 @@
-import { whatsapp_icon } from "@/public/assets";
-import Image from "next/image";
+
 import React from "react";
+import { FaWhatsapp } from "react-icons/fa6";
 
 const Whatsapp = () => {
   return (
@@ -11,7 +11,8 @@ const Whatsapp = () => {
         rel="noopener noreferrer"
         className="flex items-center gap-2 bg-green text-white font-medium rounded-full p-3 hover:bg-green-600 transition-shadow shadow-lg md:p-4"
       >
-        <Image src={whatsapp_icon} alt="WhatsApp icon" width={35} height={35} />
+        <FaWhatsapp size={35}/>
+
         <p className="hidden sm:block text-white font-bold">Chat With Us</p>
       </a>
     </div>

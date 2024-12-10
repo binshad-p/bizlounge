@@ -28,6 +28,15 @@ const OurServices = () => {
           <div
             className="py-8 flex flex-col gap-6 justify-center items-center border border-[#404B57] rounded-md cursor-pointer group transition-colors duration-300 hover:bg-primary"
             key={index}
+            onClick={() => {
+              const encodedMessage = encodeURIComponent(
+                `Hi Bizlounge, I want to enquire about ${item?.title}`
+              );
+              window.open(
+                `https://wa.me/971544702611?text=${encodedMessage}`,
+                "_blank"
+              );
+            }}
           >
             <div className="w-[85px] h-[85px] rounded-full bg-[#29333F] flex justify-center items-center group-hover:bg-white">
               <Image
@@ -55,9 +64,9 @@ const OurServices = () => {
         ))}
       </div>
       <Link href="/services">
-      <button className="border border-white px-8 py-4 rounded-3xl text-white font-semibold">
-        Explore All Services
-      </button>
+        <button className="border border-white px-8 py-4 rounded-[50px] text-white font-semibold">
+          Explore All Services
+        </button>
       </Link>
     </div>
   );

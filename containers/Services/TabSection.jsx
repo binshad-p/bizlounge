@@ -9,8 +9,7 @@ import {
   serviceData5,
 } from "@/constant";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { home_bg } from "@/public/assets";
-import Link from "next/link";
+
 
 const TabSection = () => {
   return (
@@ -187,7 +186,7 @@ const TabSection = () => {
             </div>
           ))}
         </TabsContent>
-        
+
         <TabsContent value="document_attestation">
           {serviceData4?.map((item, index) => (
             <div className="flex flex-col gap-5" key={index}>

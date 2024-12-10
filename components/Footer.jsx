@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Facebook, Linkedin, MapPin, Phone, Mail, Youtube } from 'lucide-react'
 import Image from "next/image"
 import { logo } from "@/public/assets"
+import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -18,15 +19,16 @@ export default function Footer() {
             <p className="text-sm text-slate-400">
             Bizlounge is a trusted provider of comprehensive business solutions in the UAE, offering expert services in company formation, visa processing, PRO services, and more.            </p>
             <div className="flex space-x-4">
-              <Link href="#" className="hover:text-white">
+              <a href="https://www.facebook.com/share/19suUW42jL/?mibextid=LQQJ4d" target="blank" className="hover:text-white">
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
+              </a>
+              <Link href="https://www.instagram.com/bizloungeuae?igsh=MXJ4MTQxeHJqczJ4YQ%3D%3D&utm_source=qr" className="hover:text-white">
+                <FaInstagram className="h-5 w-5" />
+
+                <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" className="hover:text-white">
-                <Youtube className="h-5 w-5" />
-                <span className="sr-only">YouTube</span>
-              </Link>
-              <Link href="#" className="hover:text-white">
+              <Link href="www.linkedin.com/in/bizloung-documents-clearing-services-47211533b" target="blank" className="hover:text-white">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
