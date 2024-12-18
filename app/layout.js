@@ -5,7 +5,7 @@ import React, { Suspense } from "react";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import Footer from "@/components/Footer";
-
+import { Analytics } from "@vercel/analytics/react"
 import {DM_Sans} from "next/font/google"
 import Whatsapp from "@/components/Whatsapp";
 import { ToastContainer } from "react-toastify";
@@ -38,6 +38,8 @@ export default function RootLayout({ children }) {
           <Whatsapp/>
           <Suspense >{children}</Suspense>
           <Footer />
+          <Analytics />
+
       </body>
     </html>
   );
