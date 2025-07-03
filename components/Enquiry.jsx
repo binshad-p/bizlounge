@@ -56,7 +56,7 @@ const Enquiry = () => {
                 className="w-[90%] h-[28rem] border-0 max-sm:w-full sm:max-lg:w-full max-sm:h-[18rem]"
                 allowFullScreen=""
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade""></iframe>
+                referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
           <div className=" flex flex-col gap-4 w-1/2  max-sm:w-full sm:max-lg:w-full">
