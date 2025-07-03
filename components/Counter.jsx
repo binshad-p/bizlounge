@@ -11,7 +11,7 @@ const Counter = () => {
         </p>
         <Link href="/contact">
         <button className="border border-white px-8 py-3 rounded-3xl text-white font-bold">
-          Get in Touch!
+          Get in Touch! 
         </button>
         </Link>
       </div>
