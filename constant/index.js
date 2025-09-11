@@ -96,6 +96,7 @@ export const home_service_data = [
     image1: service_icon_white_1,
     title: "Company Formation",
     desc: "Helping establish a new company, from registration to compliance.",
+    tab_value: "comapany_formation",
   },
   {
     id: 2,
@@ -103,6 +104,7 @@ export const home_service_data = [
     image1: service_icon_white_3,
     title: "Visa Services",
     desc: "Expert assistance with visa applications and immigration.",
+    tab_value: "visa_services",
   },
   {
     id: 3,
@@ -110,6 +112,7 @@ export const home_service_data = [
     image1: service_icon_white_2,
     title: "Pro Services ",
     desc: "Professional support for government processes and documentation.",
+    tab_value: "pro_services",
   },
   {
     id: 4,
@@ -117,6 +120,7 @@ export const home_service_data = [
     image1: service_icon_white_6,
     title: "Documents Attestation ",
     desc: "Ensuring your documents are legally verified and recognized internationally.",
+    tab_value: "document_attestation",
   },
   {
     id: 5,
@@ -124,6 +128,7 @@ export const home_service_data = [
     image1: service_icon_white_5,
     title: " Translation Services",
     desc: " Providing accurate translation of documents across multiple languages",
+    tab_value: "document_attestation",
   },
   {
     id: 6,
@@ -131,6 +136,7 @@ export const home_service_data = [
     image1: service_icon_white_4,
     title: "Trade Mark Registration",
     desc: "Helping businesses protect their brand by registering trademarks",
+    tab_value: "trademark_registration",
   },
 
   {
@@ -139,6 +145,7 @@ export const home_service_data = [
     image1: service_icon_white_7,
     title: " Bank Account Opening",
     desc: "Facilitating the opening of corporate and personal bank accounts.",
+    tab_value: "comapany_formation",
   },
   {
     id: 8,
@@ -146,6 +153,7 @@ export const home_service_data = [
     image1: service_icon_white_8,
     title: "Company liquidation ",
     desc: "Assisting with the legal process of dissolving and liquidating a company.",
+    tab_value: "comapany_formation",
   },
 ];
 export const mainland_service_data = [
@@ -348,24 +356,28 @@ export const serviceData4 = [
     title: "Document Attestation & Translation Services",
     Description:
       "We provide professional Document Attestation & Translation Services to ensure your documents are legally recognized in the UAE. Our services include Commercial Certificate Attestation, Educational Certificate Attestation, Personal Certificate Attestation, and Legal and Certified Translation. We ensure quick and reliable processing, making sure your documents meet all necessary legal requirements for use in the UAE. Trust us to handle your attestation and translation needs efficiently and accurately.",
-      subService : [
-        { 
-          sub_service: "Commercial Certificate Attestation", 
-          whatsappMessage: "Hi Bizlounge, I want to enquire about Commercial Certificate Attestation" 
-        },
-        { 
-          sub_service: "Educational Certificate Attestation", 
-          whatsappMessage: "Hi Bizlounge, I want to enquire about Educational Certificate Attestation" 
-        },
-        { 
-          sub_service: "Personal Certificate Attestation", 
-          whatsappMessage: "Hi Bizlounge, I want to enquire about Personal Certificate Attestation" 
-        },
-        { 
-          sub_service: "Legal and Certified Translation", 
-          whatsappMessage: "Hi Bizlounge, I want to enquire about Legal and Certified Translation" 
-        },
-      ]
+    subService: [
+      {
+        sub_service: "Commercial Certificate Attestation",
+        whatsappMessage:
+          "Hi Bizlounge, I want to enquire about Commercial Certificate Attestation",
+      },
+      {
+        sub_service: "Educational Certificate Attestation",
+        whatsappMessage:
+          "Hi Bizlounge, I want to enquire about Educational Certificate Attestation",
+      },
+      {
+        sub_service: "Personal Certificate Attestation",
+        whatsappMessage:
+          "Hi Bizlounge, I want to enquire about Personal Certificate Attestation",
+      },
+      {
+        sub_service: "Legal and Certified Translation",
+        whatsappMessage:
+          "Hi Bizlounge, I want to enquire about Legal and Certified Translation",
+      },
+    ],
   },
 ];
 export const serviceData5 = [

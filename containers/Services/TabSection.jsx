@@ -1,4 +1,6 @@
-import React from "react";
+'use client'
+
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { CircleCheckBig } from "lucide-react";
 import {
@@ -10,13 +12,25 @@ import {
 } from "@/constant";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-
 const TabSection = () => {
+  const [tabValue, setTabValue] = useState("comapany_formation");
+
+  useEffect(() => {
+  const tab = localStorage.getItem("tabValue");
+  if (tab) {
+    setTabValue(tab);
+  }
+}, []);
+
   return (
     <div className="padding-x my-[5rem] sm:max-lg:my-[3rem] max-sm:my-[2rem] ">
       <Tabs
-        defaultValue="comapany_formation"
-        className=" flex gap-[60px] items-start max-sm:gap-5"
+        value={tabValue}
+        onValueChange={(value) => {
+          setTabValue(value);
+          localStorage.setItem("tabValue", value);
+        }}
+        className="flex gap-[60px] items-start max-sm:gap-5"
       >
         <TabsList className="flex flex-col  ">
           <TabsTrigger
@@ -262,7 +276,6 @@ const TabSection = () => {
             </div>
           ))}
         </TabsContent>
-
       </Tabs>
     </div>
   );

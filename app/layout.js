@@ -9,6 +9,7 @@ import { Analytics } from "@vercel/analytics/react"
 import {DM_Sans} from "next/font/google"
 import Whatsapp from "@/components/Whatsapp";
 import { ToastContainer } from "react-toastify";
+import ScrollProgressToTop from "@/components/ScrollProgressToTop";
 
 
 export const metadata = {
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
 
           <Header />
           <Whatsapp/>
+          <ScrollProgressToTop/>
           <Suspense >{children}</Suspense>
           <Footer />
           <Analytics />

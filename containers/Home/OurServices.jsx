@@ -1,8 +1,15 @@
 import { home_service_data } from "@/constant";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation"; // ✅ Next.js navigation hook
 
 const OurServices = () => {
+  const router = useRouter();
+
+  const handleNavigate = (value) => {
+    localStorage.setItem('tabValue',value)
+    router.push("/services"); // ✅ navigate to given path
+  };
   return (
     <div className="padding-x py-[7.5rem] bg-service_bg flex flex-col justify-center items-center max-sm:py-[5rem] bg-no-repeat bg-cover">
       <div className="flex justify-between items-center max-sm:flex-col max-sm:gap-5">
@@ -28,15 +35,7 @@ const OurServices = () => {
           <div
             className="py-8 flex flex-col gap-6 justify-center items-center border border-[#404B57] rounded-md cursor-pointer group transition-colors duration-300 hover:bg-primary"
             key={index}
-            onClick={() => {
-              const encodedMessage = encodeURIComponent(
-                `Hi Bizlounge, I want to enquire about ${item?.title}`
-              );
-              window.open(
-                `https://wa.me/971544702611?text=${encodedMessage}`,
-                "_blank"
-              );
-            }}
+            onClick={()=>handleNavigate(item?.tab_value)}
           >
             <div className="w-[85px] h-[85px] rounded-full bg-[#29333F] flex justify-center items-center group-hover:bg-white">
               <Image
