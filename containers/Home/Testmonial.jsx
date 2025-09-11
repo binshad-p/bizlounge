@@ -8,10 +8,11 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { UserRound } from "lucide-react";
+import { TestmonialData } from "@/constant";
 
 const Testmonial = () => {
   return (
-    <div className="flex flex-col items-center justify-center padding-x py-[7.5rem] max-sm:flex-col max-sm:py-[5rem]">
+    <div className="flex flex-col items-center justify-center padding-x pt-[7.5rem] max-sm:flex-col ">
       <div className="max-sm:w-full">
         <p className="uppercase text-sm text-[#B2B8BF] font-medium text-center max-sm:text-start">
           Testimonials
@@ -31,17 +32,14 @@ const Testmonial = () => {
             delay: 2500,
             disableOnInteraction: false,
           }}
-          pagination={{
-            clickable: true,
-          }}
           breakpoints={{
             0: {
-              slidesPerView: 1.5,
+              slidesPerView: 1.2,
               spaceBetween: 20,
             },
             // when window width is >= 640px
             640: {
-              slidesPerView: 1.5,
+              slidesPerView: 1.2,
               spaceBetween: 20,
             },
             // when window width is >= 768px
@@ -55,29 +53,27 @@ const Testmonial = () => {
               spaceBetween: 40,
             },
           }}
-          modules={[Autoplay, Pagination, Navigation]}
+          modules={[Autoplay, Navigation]}
           className="mySwiper"
         >
-   
-
-          <SwiperSlide>
-            <div className="flex flex-col gap-5 bg-[#F5F8FB] p-7 rounded-lg">
-              <div className="flex items-center gap-2">
-                <div className="w-[80px] h-[80px] rounded-full flex justify-center items-center bg-[#2D3845]">
-                  <UserRound size={40} color="white" />
+          {TestmonialData?.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className="flex flex-col gap-5 bg-[#F5F8FB] p-7 rounded-lg h-[330px] max-lg:h-[500px] max-sm:h-[460px]">
+                <div className="flex items-center gap-2">
+                  <div className="w-[80px] h-[80px] rounded-full flex justify-center items-center bg-[#2D3845]">
+                    <UserRound size={40} color="white" />
+                  </div>
+                  <div className="flex flex-col">
+                    <p className="text-primary text-lg">{item?.name}</p>
+                    <p className="text-[#909AA4] text-sm font-light">Happy Client</p>
+                  </div>
                 </div>
-                <div className="flex flex-col">
-                  <p className="text-primary text-lg">Jane Doe</p>
-                  <p className="text-[#909AA4] text-sm font-light">USA</p>
-                </div>
+                <p className="text-[#37373f]  font-light">
+                  {item?.review}
+                </p>
               </div>
-              <p className="text-[#898A9C] text-sm font-light">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took.
-              </p>
-            </div>
-          </SwiperSlide>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>

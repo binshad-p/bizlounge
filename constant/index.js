@@ -412,3 +412,27 @@ export const freezoneServiceData = [
   { image: icon_20 },
   { image: icon_21 },
 ];
+
+export const TestmonialData = [
+  {
+    name: "Mithun Radhakrishnan",
+    review:
+      "BIZLOUNGE Documents Clearing Services Co. in Dubai offers exceptional service with professionalism and precision. They’re highly prompt in attending clients, providing clear proposals, and completing tasks efficiently. Affordable pricing and smooth execution make them a top choice for document services. Highly recommended for hassle free support…!!",
+  },
+  {
+    name:"Wafa",
+    review:"I just wanted to say a big thank you to the team at Biz Lounge for the way they handled my immigration process. Everything was clear, smooth, and well-organized from start to finish, no confusion, no delays, just efficient and professional service."
+  },
+  {
+    name:"Aniket Kulkarni",
+    review:"Bizlounge team helped me in obtaining 10 years golden visa. They helped me in understanding the process, submitting the right documents & solving some issues. They made the process very smooth.",
+  },
+  {
+
+    name:"kamala jawahar",
+    review:"Very confident and cooperative team. Excellent customer service and effective handling of documents and procedures. Highly recommend."
+  },{
+    name:"Antony Anglin",
+    review:"Bizlounge have taken control of all my business license renewals and my staff visas and quotas and I can honestly say over the 4 years I’ve been operating in Dubai they are by far the best!"
+  }
+];
