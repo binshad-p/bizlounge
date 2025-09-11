@@ -1,46 +1,39 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Link from "next/link"; // Updated for Next.js
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Enquiry = () => {
+  const [loading, setLoading] = useState(false);
+
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true);
 
     emailjs
       .sendForm(
-        "service_zphsnaw",
-        "template_zuhd2q4",
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         form.current,
-        "hglgJJcVwSvmNjWSh"
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
-      .then((result) => {
-        console.log(result.text);
-      
-        // Reset the form
-        if (form && form.current) {
-          form.current.reset();
-        }
-      
-        // Display success toast message
-        toast.success("Submitted Successfully!", {
-          position: "top-right", // Correct usage for toast position
-        });
+      .then(() => {
+        form.current?.reset();
+        toast.success("Submitted Successfully!", { position: "top-right" });
       })
-      .catch((error) => {
-        console.error("Submission failed:", error);
-      
-        // Display error toast message (optional for handling errors)
+      .catch(() => {
         toast.error("Submission failed. Please try again.", {
           position: "top-right",
         });
+      })
+      .finally(() => {
+        setLoading(false);
       });
-      
   };
 
   return (
@@ -49,15 +42,16 @@ const Enquiry = () => {
 
       <div className=" mx-auto px-4 py-12 max-sm:px-[0rem] max-sm:py-[0rem]">
         <div className="flex max-sm:flex-col-reverse sm:max-lg:flex-col-reverse justify-between gap-[54px] max-sm:gap-[20px]">
-            <div className="mb-4 w-1/2  max-sm:w-full sm:max-lg:w-full">
-      
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57767.988330416505!2d55.21891157866026!3d25.18638006818356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f697479261d03%3A0xd63b2dc589a4f7ac!2sBIZLOUNGE!5e0!3m2!1sen!2sin!4v1751538242796!5m2!1sen!2sin"
-                title="Google Map"
-                className="w-[90%] h-[28rem] border-0 max-sm:w-full sm:max-lg:w-full max-sm:h-[18rem]"
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+          <div className="mb-4 w-1/2  max-sm:w-full sm:max-lg:w-full">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57767.988330416505!2d55.21891157866026!3d25.18638006818356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f697479261d03%3A0xd63b2dc589a4f7ac!2sBIZLOUNGE!5e0!3m2!1sen!2sin!4v1751538242796!5m2!1sen!2sin"
+              title="Google Map"
+              className="w-[90%] h-[28rem] border-0 max-sm:w-full sm:max-lg:w-full max-sm:h-[18rem]"
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
 
           <div className=" flex flex-col gap-4 w-1/2  max-sm:w-full sm:max-lg:w-full">
             <div className="flex flex-col  mb-5">
@@ -67,7 +61,7 @@ const Enquiry = () => {
 
               <p className="flex text-[#2D3845] font-light text-[40px]">
                 Get in
-                <span className="font-semibold"> &nbsp; touch</span>{" "}
+                <span className="font-semibold"> &nbsp; Touch</span>{" "}
               </p>
             </div>
             <form ref={form} onSubmit={sendEmail}>
@@ -120,9 +114,10 @@ const Enquiry = () => {
               <div>
                 <button
                   type="submit"
+                  disabled={loading}
                   className=" px-[5rem] mt-4 bg-blue-500 text-white py-3 rounded-full hover:bg-blue-600 transition font-bold max-sm:text-sm max-sm:px-[1rem]"
                 >
-                  Send Message
+                  {loading ? "Sending..." : "Send Request"}
                 </button>
               </div>
             </form>
