@@ -21,7 +21,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Hero = () => {
-   const form = useRef(null);
+  const form = useRef(null);
   const [loading, setLoading] = useState(false);
 
   const sendEmail = (e) => {
@@ -61,83 +61,84 @@ const Hero = () => {
       setShowForm(true);
     }
   }, []);
-  
+
   return (
     <div className="relative max-sm:h-[100vh] sm:max-lg:h-[100vh]">
-      {
-        showForm && (
-
-      <div className="bg-white/70 rounded-md h-[500px] w-[450px] max-sm:w-[350px] absolute right-4 top-36 z-20 p-5 shadow-lg  lg:max-2xl:h-[380px] ">
-        <p className="flex justify-center text-[#2D3845] font-light text-center text-[40px]">
-          Let’s Connect
-        </p>
-                 <button
+      {showForm && (
+        <div className="bg-white/70 rounded-md  w-[450px] lg:max-2xl:w-[320px] max-sm:w-[350px] absolute right-4 top-36  lg:max-2xl:top-36 z-20 p-4 lg:max-2xl:p-3 shadow-lg  ">
+          <p className="flex justify-center text-[#2D3845] font-light text-center text-[40px] lg:max-2xl:text-4xl">
+            Let’s Connect
+          </p>
+          <button
             onClick={() => setShowForm(false)}
             className="absolute top-2 right-2 text-gray-600 hover:text-gray-900 text-xl font-bold hidden lg:max-2xl:block sm:max-lg:block max-sm:block"
           >
             ✕
           </button>
-        <form ref={form} onSubmit={sendEmail}>
-          <div className="grid grid-cols-1 lg:max-2xl:grid-cols-2 gap-4 text-sm">
-            <div>
-              <input
-                type="text"
-                name="from_name"
-                placeholder="Name"
-                className="w-full p-3 border border-[#77777733] rounded-lg outline-none bg-white"
-              />
+          <form ref={form} onSubmit={sendEmail}>
+            <div className="grid grid-cols-1 lg:max-2xl:grid-cols-2 gap-4 lg:max-2xl:gap-2 text-sm">
+              <div>
+                <input
+                  type="text"
+                  name="from_name"
+                  placeholder="Name"
+                  required
+                  className="w-full p-3 lg:max-2xl:p-2 lg:max-2xl:text-xs border border-[#77777733] rounded-lg outline-none bg-white"
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  name="from_mail"
+                  placeholder="Email"
+                  required
+                  className="w-full p-3 lg:max-2xl:p-2 lg:max-2xl:text-xs border border-[#77777733] rounded-lg outline-none bg-white"
+                />
+              </div>
             </div>
-            <div>
-              <input
-                type="email"
-                name="from_mail"
-                placeholder="Email"
-                className="w-full p-3 border border-[#77777733] rounded-lg outline-none bg-white"
-              />
-            </div>
-          </div>
 
-          <div className="grid grid-cols-1 lg:max-2xl:grid-cols-2 gap-4 mt-4 text-sm">
-            <div>
-              <input
-                type="text"
-                name="from_number"
-                placeholder="Phone"
-                className="w-full p-3 border border-[#77777733] rounded-lg outline-none bg-white"
-              />
+            <div className="grid grid-cols-1  lg:max-2xl:grid-cols-2 gap-4 lg:max-2xl:gap-2 mt-3 lg:max-2xl:mt-2 text-sm">
+              <div>
+                <input
+                  type="text"
+                  name="from_number"
+                  placeholder="Phone"
+                  required
+                  className="w-full p-3 lg:max-2xl:p-2 lg:max-2xl:text-xs border border-[#77777733] rounded-lg outline-none bg-white"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  name="from_description"
+                  placeholder="Subject"
+                  required
+                  className="w-full p-3 lg:max-2xl:p-2 lg:max-2xl:text-xs border border-[#77777733] rounded-lg outline-none bg-white"
+                />
+              </div>
             </div>
-            <div>
-              <input
-                type="text"
-                name="from_description"
-                placeholder="Subject"
-                className="w-full p-3 border border-[#77777733] rounded-lg outline-none bg-white"
-              />
+
+            <div className="mt-3 lg:max-2xl:mt-2 text-sm">
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Message"
+                required
+                className="w-full p-3 lg:max-2xl:p-2 lg:max-2xl:text-xs border border-[#77777733] rounded-lg outline-none bg-white"
+              ></textarea>
             </div>
-          </div>
-
-          <div className="mt-4 text-sm">
-            <textarea
-              name="message"
-              rows="3"
-              placeholder="Message"
-              className="w-full p-3 border border-[#77777733] rounded-lg outline-none bg-white"
-            ></textarea>
-          </div>
-          {/* <div> */}
-          <button
-            type="submit"
-                        disabled={loading}
-
-            className="px-[5rem] w-full mt-4 bg-blue-500 text-white py-3 rounded-full hover:bg-blue-600 transition font-bold max-sm:text-sm max-sm:px-[1rem]"
-          >
-            {loading ? "Sending..." : "Send Request"}
-          </button>
-          {/* </div> */}
-        </form>
-      </div>
-        )
-      }
+            {/* <div> */}
+            <button
+              type="submit"
+              disabled={loading}
+              className="px-[5rem] w-full mt-3 lg:max-2xl:mt-2 bg-blue-500 text-white py-3 lg:max-2xl:py-2  rounded-full hover:bg-blue-600 transition font-bold max-sm:text-sm max-sm:px-[1rem]"
+            >
+              {loading ? "Sending..." : "Send Request"}
+            </button>
+            {/* </div> */}
+          </form>
+        </div>
+      )}
 
       <Swiper
         centeredSlides

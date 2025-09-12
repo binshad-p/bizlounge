@@ -72,6 +72,7 @@ const Enquiry = () => {
                     name="from_name"
                     placeholder=" Name"
                     className="w-full p-3 border border-[#77777733] rounded-lg outline-none"
+                    required
                   />
                 </div>
                 <div>
@@ -80,6 +81,7 @@ const Enquiry = () => {
                     name="from_mail"
                     placeholder="Email "
                     className="w-full p-3 border border-[#77777733] rounded-lg outline-none "
+                    required
                   />
                 </div>
               </div>
@@ -91,6 +93,7 @@ const Enquiry = () => {
                     name="from_number"
                     placeholder="Phone "
                     className="w-full p-3 border border-[#77777733] rounded-lg outline-none "
+                    required
                   />
                 </div>
                 <div>
@@ -99,6 +102,7 @@ const Enquiry = () => {
                     name="from_description"
                     placeholder="Subject"
                     className="w-full p-3 border border-[#77777733] rounded-lg outline-none "
+                    required
                   />
                 </div>
               </div>
@@ -108,6 +112,7 @@ const Enquiry = () => {
                   name="message"
                   rows="5"
                   placeholder="Message"
+                  required
                   className="w-full p-3 border border-[#77777733] rounded-lg outline-none  "
                 ></textarea>
               </div>
