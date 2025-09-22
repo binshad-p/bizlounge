@@ -12,10 +12,10 @@ const LinkedWith = () => {
             Connecting Partners
           </p>
 
-          <p className="flex   font-light text-[40px] max-sm:flex-col max-sm:text-2xl sm:max-lg:text-2xl">
+          <h2 className="flex   font-light text-[40px] max-sm:flex-col max-sm:text-2xl sm:max-lg:text-2xl">
             We work closely with all &nbsp;
             <span className="font-semibold"> Government Agencies</span>
-          </p>
+          </h2>
         </div>
 
         <Marquee>

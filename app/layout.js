@@ -15,7 +15,7 @@ import ScrollProgressToTop from "@/components/ScrollProgressToTop";
 export const metadata = {
   title: "BizLounge |Expert Business Setup & Corporate Services",
   description:
-    "BizLounge UAE offers comprehensive business solutions, including company formation, visa services, PRO support, document attestation & translation, and trademark registration. Simplify your journey to success with our reliable and efficient corporate services in the UAE.",
+    "BizLounge UAE provides company formation, visa services, PRO support, attestation, translation & trademark registration with reliable corporate solutions."
 };
 
 const dmSams = DM_Sans(

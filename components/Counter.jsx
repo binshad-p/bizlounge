@@ -5,10 +5,10 @@ const Counter = () => {
   return (
     <div className="bg-counter_bg padding-x py-[7.5rem] max-sm:py-[5rem] sm:max-lg:py-[3rem]">
       <div className="flex justify-between items-center max-sm:flex-col max-sm:gap-5">
-        <p className="flex flex-col text-white font-light text-[40px] max-sm:text-2xl">
+        <h2 className="flex flex-col text-white font-light text-[40px] max-sm:text-2xl">
           Your Trusted Partner in
           <span className="font-semibold">Business and Beyond</span>
-        </p>
+        </h2>
         <Link href="/contact">
         <button className="border border-white px-8 py-3 rounded-3xl text-white font-bold">
           Get in Touch! 

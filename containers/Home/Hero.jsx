@@ -65,9 +65,9 @@ const Hero = () => {
   return (
     <div className="relative max-sm:h-[100vh] sm:max-lg:h-[100vh]">
       {showForm && (
-        <div className="bg-white/70 rounded-md  w-[450px] lg:max-2xl:w-[320px] max-sm:w-[350px] absolute right-4 top-36  lg:max-2xl:top-36 z-20 p-4 lg:max-2xl:p-3 shadow-lg  ">
+        <div className="bg-white/70 rounded-md  w-[450px] lg:max-2xl:w-[320px] max-sm:w-[350px] absolute right-12 top-40  lg:max-2xl:top-36 z-20 p-4 lg:max-2xl:p-3 shadow-lg  ">
           <p className="flex justify-center text-[#2D3845] font-light text-center text-[40px] lg:max-2xl:text-4xl">
-            Let’s Connect
+            Get Free Consultation{" "}
           </p>
           <button
             onClick={() => setShowForm(false)}
@@ -76,7 +76,7 @@ const Hero = () => {
             ✕
           </button>
           <form ref={form} onSubmit={sendEmail}>
-            <div className="grid grid-cols-1 lg:max-2xl:grid-cols-2 gap-4 lg:max-2xl:gap-2 text-sm">
+            <div className="grid grid-cols-1  gap-4 lg:max-2xl:gap-2 text-sm">
               <div>
                 <input
                   type="text"
@@ -97,7 +97,7 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1  lg:max-2xl:grid-cols-2 gap-4 lg:max-2xl:gap-2 mt-3 lg:max-2xl:mt-2 text-sm">
+            <div className="grid grid-cols-1   gap-4 lg:max-2xl:gap-2 mt-3 lg:max-2xl:mt-2 text-sm">
               <div>
                 <input
                   type="text"
@@ -107,7 +107,7 @@ const Hero = () => {
                   className="w-full p-3 lg:max-2xl:p-2 lg:max-2xl:text-xs border border-[#77777733] rounded-lg outline-none bg-white"
                 />
               </div>
-              <div>
+              {/* <div>
                 <input
                   type="text"
                   name="from_description"
@@ -115,10 +115,10 @@ const Hero = () => {
                   required
                   className="w-full p-3 lg:max-2xl:p-2 lg:max-2xl:text-xs border border-[#77777733] rounded-lg outline-none bg-white"
                 />
-              </div>
+              </div> */}
             </div>
 
-            <div className="mt-3 lg:max-2xl:mt-2 text-sm">
+            {/* <div className="mt-3 lg:max-2xl:mt-2 text-sm">
               <textarea
                 name="message"
                 rows="4"
@@ -126,14 +126,14 @@ const Hero = () => {
                 required
                 className="w-full p-3 lg:max-2xl:p-2 lg:max-2xl:text-xs border border-[#77777733] rounded-lg outline-none bg-white"
               ></textarea>
-            </div>
+            </div> */}
             {/* <div> */}
             <button
               type="submit"
               disabled={loading}
               className="px-[5rem] w-full mt-3 lg:max-2xl:mt-2 bg-blue-500 text-white py-3 lg:max-2xl:py-2  rounded-full hover:bg-blue-600 transition font-bold max-sm:text-sm max-sm:px-[1rem]"
             >
-              {loading ? "Sending..." : "Send Request"}
+              {loading ? "Sending..." : "Submit"}
             </button>
             {/* </div> */}
           </form>
@@ -152,9 +152,9 @@ const Hero = () => {
           <SwiperSlide key={index}>
             <div className="relative h-screen w-full">
               <div className="absolute z-10 left-6 md:left-12 lg:left-20 top-1/2 -translate-y-1/2 max-w-2xl">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-6">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-6">
                   {item?.title}
-                </h1>
+                </h2>
                 <p className="text-sm sm:text-base md:text-lg lg:text-xl font-light text-white/80">
                   {item?.desc}
                 </p>

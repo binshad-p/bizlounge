@@ -11,12 +11,12 @@ const WhyChooseUs = () => {
             WHY CHOOSE BIZLOUNGE
           </p>
 
-          <p className="flex flex-col text-[#2D3845] font-light text-[40px] max-sm:text-2xl sm:max-lg:text-2xl">
+          <h2 className="flex flex-col text-[#2D3845] font-light text-[40px] max-sm:text-2xl sm:max-lg:text-2xl">
             Affordable, Hassle-Free
             <span className="font-semibold">
               Business Setup in the UAE
             </span>{" "}
-          </p>
+          </h2>
         </div>
         <div className="flex flex-col gap-4 mt-4">
           <p className=" text-[#2D3845] text-[22px] font-light max-sm:text-base sm:max-lg:text-base">

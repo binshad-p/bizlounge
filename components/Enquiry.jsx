@@ -59,10 +59,10 @@ const Enquiry = () => {
                 Contact Us
               </p>
 
-              <p className="flex text-[#2D3845] font-light text-[40px]">
+              <h2 className="flex text-[#2D3845] font-light text-[40px]">
                 Get in
                 <span className="font-semibold"> &nbsp; Touch</span>{" "}
-              </p>
+              </h2>
             </div>
             <form ref={form} onSubmit={sendEmail}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4  text-sm">
@@ -122,7 +122,7 @@ const Enquiry = () => {
                   disabled={loading}
                   className=" px-[5rem] mt-4 bg-blue-500 text-white py-3 rounded-full hover:bg-blue-600 transition font-bold max-sm:text-sm max-sm:px-[1rem]"
                 >
-                  {loading ? "Sending..." : "Send Request"}
+                  {loading ? "Sending..." : "Submit"}
                 </button>
               </div>
             </form>

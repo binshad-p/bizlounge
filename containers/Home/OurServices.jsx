@@ -16,10 +16,10 @@ const OurServices = () => {
         <div className="flex-1 max-sm:w-full ">
           <p className="text-[#9EA9B3] text-sm font-medium">OUR SERVICES</p>
 
-          <p className="flex flex-col text-white font-light text-[40px] max-sm:text-2xl max-sm:items-start sm:max-lg:text-2xl">
+          <h2 className="flex flex-col text-white font-light text-[40px] max-sm:text-2xl max-sm:items-start sm:max-lg:text-2xl">
             Comprehensive Solutions
             <span className="font-semibold">for Your Every Need</span>
-          </p>
+          </h2>
         </div>
         <p className="text-[#A1A2B4] font-light flex-1 sm:max-lg:text-base">
           At Bizlounge, we offer a wide range of business setup and support

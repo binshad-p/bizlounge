@@ -17,10 +17,10 @@ const Testmonial = () => {
         <p className="uppercase text-sm text-[#B2B8BF] font-medium text-center max-sm:text-start">
           Testimonials
         </p>
-        <p className="flex font-light text-[40px] max-sm:text-2xl max-sm:flex-col">
-          knows About &nbsp;
+        <h2 className="flex font-light text-[40px] max-sm:text-2xl max-sm:flex-col">
+          Knows About &nbsp;
           <span className="font-semibold"> Our Customer Say</span>
-        </p>
+        </h2>
       </div>
 
       <div className="w-full py-[60px] max-sm:py-[20px]">

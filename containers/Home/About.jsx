@@ -27,10 +27,10 @@ const About = () => {
         <div className="flex flex-col  flex-1">
           <p className="text-[#9EA9B3] text-sm font-medium">ABOUT BIZLOUNGE</p>
 
-          <p className="flex flex-col text-[#2D3845] font-light text-[40px] max-sm:text-2xl sm:max-lg:text-2xl">
+          <h2 className="flex flex-col text-[#2D3845] font-light text-[40px] max-sm:text-2xl sm:max-lg:text-2xl">
             Your Trusted Partner in
             <span className="font-semibold">Business Success</span>{" "}
-          </p>
+          </h2>
         </div>
         <div className="flex flex-col gap-4 mt-4">
           <p className=" text-[#2D3845] text-[22px] font-light max-sm:text-base sm:max-lg:text-xl">
