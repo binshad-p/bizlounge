@@ -66,7 +66,7 @@ const Hero = () => {
     <div className="relative max-sm:h-[100vh] sm:max-lg:h-[100vh]">
       {showForm && (
         <div className="bg-white/70 rounded-md  w-[450px] lg:max-2xl:w-[320px] max-sm:w-[350px] absolute right-12 top-40  lg:max-2xl:top-36 z-20 p-4 lg:max-2xl:p-3 shadow-lg  ">
-          <p className="flex justify-center text-[#2D3845] font-light text-center text-[40px] lg:max-2xl:text-4xl">
+          <p className="flex justify-center text-[#2D3845] font-medium text-center text-[36px] lg:max-2xl:text-3xl">
             Get Free Consultation{" "}
           </p>
           <button
