@@ -57,7 +57,7 @@ export function Header() {
           : pathname !== "/"
           ? "bg-white text-black"
           : "bg-[#1F2437B2] text-white"
-      } px-[100px] py-8 z-50 w-full font-medium fixed top-0 transition-colors duration-300 max-sm:px-[2rem] lg:max-2xl:px-[5rem] `}
+      } px-[100px] py-5 z-50 w-full font-medium fixed top-0 transition-colors duration-300 max-sm:px-[2rem] lg:max-2xl:px-[5rem] `}
     >
       <div className="container mx-auto flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
