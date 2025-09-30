@@ -16,7 +16,6 @@ import { home_hero_data } from "@/constant";
 
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import Link from "next/link"; // Updated for Next.js
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -65,78 +64,57 @@ const Hero = () => {
   return (
     <div className="relative max-sm:h-[100vh] sm:max-lg:h-[100vh]">
       {showForm && (
-        <div className="bg-white/70 rounded-md  w-[450px] lg:max-2xl:w-[320px] max-sm:w-[350px] absolute right-12 top-40  lg:max-2xl:top-36 z-20 p-4 lg:max-2xl:p-3 shadow-lg  ">
-          <p className="flex justify-center text-[#2D3845] font-medium text-center text-[36px] lg:max-2xl:text-3xl">
-            Get Free Consultation{" "}
-          </p>
+        <div className="rounded-md   absolute right-12 top-40  lg:max-2xl:top-36 z-20 p-4 lg:max-2xl:p-3 shadow-lg  ">
+      
           <button
             onClick={() => setShowForm(false)}
             className="absolute top-2 right-2 text-gray-600 hover:text-gray-900 text-xl font-bold hidden lg:max-2xl:block sm:max-lg:block max-sm:block"
           >
             ✕
           </button>
-          <form ref={form} onSubmit={sendEmail}>
-            <div className="grid grid-cols-1  gap-4 lg:max-2xl:gap-2 text-sm">
-              <div>
+       <form ref={form} onSubmit={sendEmail}>
+          <div className="bg-white rounded-lg shadow-lg p-4 md:p-8    md:w-[330px] lg:w-[500px] w-full mt-10 md:mt-0 ">
+            <h2 className="text-[33px]   font-bold text-blue-900 mb-1 md:mb-4  leading-[50px] min-w-max">
+              Get Free <br className="sm:block md:hidden" /> Consultation
+            </h2>
+            <form className="flex flex-col gap-2 md:gap-4">
+              <div className=" w-full py-3">
+                <label className="font-normal text-base text-[#4E4F53] ">
+                  Full name *
+                </label>
                 <input
-                  type="text"
                   name="from_name"
-                  placeholder="Name"
-                  required
-                  className="w-full p-3 lg:max-2xl:p-2 lg:max-2xl:text-xs border border-[#77777733] rounded-lg outline-none bg-white"
-                />
-              </div>
-              <div>
-                <input
-                  type="email"
-                  name="from_mail"
-                  placeholder="Email"
-                  required
-                  className="w-full p-3 lg:max-2xl:p-2 lg:max-2xl:text-xs border border-[#77777733] rounded-lg outline-none bg-white"
-                />
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1   gap-4 lg:max-2xl:gap-2 mt-3 lg:max-2xl:mt-2 text-sm">
-              <div>
-                <input
                   type="text"
-                  name="from_number"
-                  placeholder="Phone"
                   required
-                  className="w-full p-3 lg:max-2xl:p-2 lg:max-2xl:text-xs border border-[#77777733] rounded-lg outline-none bg-white"
+                  placeholder="Full Name"
+                  className="w-full  border-[0.800px] rounded-md  pl-2 pr-[15px] py-[15px] outline-none focus:ring-2 border-[#ced4da] text-[black] mt-2"
                 />
               </div>
-              {/* <div>
-                <input
+              <div className="">
+                <label className="font-normal text-base text-[#4E4F53]  ">
+                  Phone no. *
+                </label>
+                <div className="flex gap-1 mt-2">
+                  {/* <input
                   type="text"
-                  name="from_description"
-                  placeholder="Subject"
-                  required
-                  className="w-full p-3 lg:max-2xl:p-2 lg:max-2xl:text-xs border border-[#77777733] rounded-lg outline-none bg-white"
-                />
-              </div> */}
-            </div>
-
-            {/* <div className="mt-3 lg:max-2xl:mt-2 text-sm">
-              <textarea
-                name="message"
-                rows="4"
-                placeholder="Message"
-                required
-                className="w-full p-3 lg:max-2xl:p-2 lg:max-2xl:text-xs border border-[#77777733] rounded-lg outline-none bg-white"
-              ></textarea>
-            </div> */}
-            {/* <div> */}
-            <button
-              type="submit"
-              disabled={loading}
-              className="px-[5rem] w-full mt-3 lg:max-2xl:mt-2 bg-blue-500 text-white py-3 lg:max-2xl:py-2  rounded-full hover:bg-blue-600 transition font-bold max-sm:text-sm max-sm:px-[1rem]"
-            >
-              {loading ? "Sending..." : "Submit"}
-            </button>
-            {/* </div> */}
-          </form>
+                  defaultValue="+971"
+                  className="w-20  border-[0.800px] rounded-l-md  py-[15px] pl-[10px] pr-[15px] outline-none focus:ring-2 border-[#ced4da] text-black text-left"
+                /> */}
+                  <input
+                    name="from_number"
+                    type="number"
+                    required
+                    placeholder="Phone no."
+                    className="flex-1  border-[0.800px] rounded-md py-[15px] pl-2 pr-[15px] outline-none focus:ring-2 border-[#ced4da] text-[black]"
+                  />
+                </div>
+              </div>
+              <button className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-md font-semibold">
+                Submit
+              </button>
+            </form>
+          </div>
+        </form>
         </div>
       )}
 
@@ -159,6 +137,7 @@ const Hero = () => {
                   {item?.desc}
                 </p>
               </div>
+            
               <Image
                 src={item?.image}
                 alt="Slide image"
