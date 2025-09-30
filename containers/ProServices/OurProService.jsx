@@ -8,7 +8,7 @@ const OurProService = () => {
 
 
   return (
-    <div className="  bg-service_bg flex flex-col justify-center items-center  bg-no-repeat bg-cover padding-x md:py-[3rem] py-[1rem] lg:py-[100px]">
+    <div className="  bg-service_bg flex flex-col justify-center items-center  bg-no-repeat bg-cover padding-x md:py-[3rem] py-[2rem] lg:py-[100px]">
       <div className="flex justify-between items-center max-sm:flex-col max-sm:gap-5">
         <div className="flex-1 max-sm:w-full ">
           <p className="text-[#9EA9B3] text-sm font-medium">OUR SERVICES</p>

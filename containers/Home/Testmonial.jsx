@@ -12,7 +12,7 @@ import { TestmonialData } from "@/constant";
 
 const Testmonial = () => {
   return (
-    <div className="flex flex-col items-center justify-center padding-x pt-[7.5rem] max-sm:flex-col ">
+    <div className="flex flex-col items-center justify-center padding-x pt-[4rem] md:pt-[7.5rem] max-sm:flex-col ">
       <div className="max-sm:w-full">
         <p className="uppercase text-sm text-[#B2B8BF] font-medium text-center max-sm:text-start">
           Testimonials

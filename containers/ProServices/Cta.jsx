@@ -9,9 +9,13 @@ const CallAction = () => {
       <div className="flex flex-col text-center gap-6 xl:gap-12  bg-counter_bg bg-right bg    py-16 rounded-xl px-8 ">
         <div className="flex flex-col items-center">
           <h1 className="text-[40px] font-semibold">
-            Contact Us for PRO Services
+            
           </h1>
-          <p className="text-center flex-1  text-[15px] max-w-[60%] font-light ">
+            <h2 className="flex font-light text-[40px] max-sm:text-2xl max-sm:flex-col">
+           Contact Us for &nbsp;
+          <span className="font-semibold"> PRO Services</span>
+        </h2>
+          <p className="text-center flex-1   max-w-[60%] font-light ">
             Simplify Your Business Operations Today. Contact Bizlounge for
             Expert PRO Services in the UAE.
           </p>
