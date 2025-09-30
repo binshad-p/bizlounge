@@ -1,25 +1,12 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/effect-fade";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-// Import required Swiper modules
-import { EffectFade, Navigation, Pagination, Autoplay } from "swiper/modules";
-
 import Image from "next/image";
-import { home_hero_data } from "@/constant";
-
-import { useRef } from "react";
+import { pro_service_bg } from "@/public/assets";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-const Hero = () => {
+const Banner = () => {
   const form = useRef(null);
   const [loading, setLoading] = useState(false);
 
@@ -47,33 +34,32 @@ const Hero = () => {
         setLoading(false);
       });
   };
-  const [showForm, setShowForm] = useState(false);
-
-  // ⏳ Show form after 5 sec
-  useEffect(() => {
-    if (window.innerWidth < 1500) {
-      const timer = setTimeout(() => {
-        setShowForm(true);
-      }, 3000);
-      return () => clearTimeout(timer);
-    } else {
-      setShowForm(true);
-    }
-  }, []);
-
   return (
-    <div className="relative max-sm:h-[100vh] sm:max-lg:h-[100vh]">
-      {showForm && (
-        <div className="rounded-md   absolute right-12 top-40  lg:max-2xl:top-36 z-20 p-4 lg:max-2xl:p-3 shadow-lg  ">
-      
-          <button
-            onClick={() => setShowForm(false)}
-            className="absolute top-2 right-2 text-gray-600 hover:text-gray-900 text-xl font-bold hidden lg:max-2xl:block sm:max-lg:block max-sm:block"
-          >
-            ✕
-          </button>
-       <form ref={form} onSubmit={sendEmail}>
-          <div className="bg-white rounded-lg shadow-lg p-4 md:p-8    md:w-[330px] lg:w-[500px] w-full mt-10 md:mt-0 ">
+    <div className="w-full h-screen relative">
+      <Image
+        src={pro_service_bg}
+        alt="Pro Service Background"
+        fill
+        style={{ objectFit: "cover", objectPosition: "center", width: "100%" }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent flex flex-col md:flex-row justify-center md:justify-between items-center text-white  py-6 padding-x ">
+        <div className="text-white max-w-xl ">
+          {/* Logo */}
+          {/* class="bg-white text-black px-[100px] py-5 z-50 w-full font-medium fixed top-0 transition-colors duration-300 max-sm:px-[2rem] lg:max-2xl:px-[5rem] */}
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-6 leading-[60px]">
+            Your Trusted PRO Services Partner in the UAE
+          </h1>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-light text-white/80  mb-6">
+            Since 2018, Bizlounge has helped businesses navigate legal,
+            administrative, and regulatory requirements in the UAE. From
+            startups to established companies, we provide seamless PRO services
+            that let you focus on growth while we handle compliance.
+          </p>
+        </div>
+
+        {/* Right side - Form */}
+        <form ref={form} onSubmit={sendEmail}>
+          <div className="bg-white rounded-lg shadow-lg p-4 md:p-8   md:w-[330px] lg:w-[500px] w-full mt-10 md:mt-0 ">
             <h2 className="text-[33px]   font-bold text-blue-900 mb-1 md:mb-4  leading-[50px] min-w-max">
               Get Free <br className="sm:block md:hidden" /> Consultation
             </h2>
@@ -115,44 +101,9 @@ const Hero = () => {
             </form>
           </div>
         </form>
-        </div>
-      )}
-
-      <Swiper
-        centeredSlides
-        effect="fade"
-        slidesPerView={1}
-        autoplay={{ delay: 5000, disableOnInteraction: true }}
-        modules={[EffectFade, Navigation, Autoplay]}
-        className="customFadeSwiper h-full"
-      >
-        {home_hero_data.map((item, index) => (
-          <SwiperSlide key={index}>
-            <div className="relative h-screen w-full">
-              <div className="absolute z-10 left-6 md:left-12 lg:left-20 top-1/2 -translate-y-1/2 max-w-2xl">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-6">
-                  {item?.title}
-                </h2>
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl font-light text-white/80">
-                  {item?.desc}
-                </p>
-              </div>
-            
-              <Image
-                src={item?.image}
-                alt="Slide image"
-                width={1920}
-                height={1080}
-                priority
-                unoptimized
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      </div>
     </div>
   );
 };
 
-export default Hero;
+export default Banner;

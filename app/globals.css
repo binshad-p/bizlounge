@@ -20,12 +20,12 @@
 }
 
 .padding-x {
-  @apply px-[10rem] lg:max-2xl:px-[3rem] sm:max-lg:px-[2rem] max-sm:px-[1rem];
+  @apply px-[1rem] sm:px-[2rem] md:px-[3rem] lg:px-[48px] xl:px-[140px];
 }
 
 
 .customFadeSwiper {
- @apply w-full 
+  @apply w-full
 }
 
 .customFadeSwiper .fade-slide {
@@ -62,7 +62,5 @@
 
 /* Inactive Tab Styling */
 .data-\[state\=active\]\:shadow[data-state="inactive"] {
-  @apply bg-[#F5F8FB] text-black py-4 px-6 font-medium rounded-none w-[23rem]   max-sm:px-2 flex justify-start border-b border-[#E5E8EF] max-sm:w-[10rem];
+  @apply bg-[#F5F8FB] text-black py-4 px-6 font-medium rounded-none w-[23rem] max-sm:px-2 flex justify-start border-b border-[#E5E8EF] max-sm:w-[10rem];
 }
-
-

@@ -73,6 +73,8 @@ import icon_18 from "../assets/icon (18).png";
 import icon_19 from "../assets/icon (19).png";
 import icon_20 from "../assets/icon (20).png";
 import icon_21 from "../assets/icon (21).png";
+import pro_service_bg from "../assets/pro_service_bg.jpg"
+import service_contact from "../assets/service_contact_img.webp"
 export {
   logo,
   logo_blue,
@@ -150,4 +152,6 @@ export {
   icon_19,
   icon_20,
   icon_21,
+  pro_service_bg,
+  service_contact
 };

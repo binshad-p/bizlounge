@@ -61,6 +61,9 @@ import {
   serviceslogo8,
   serviceslogo9,
 } from "@/public/assets";
+import { FaPassport, FaFileInvoiceDollar, FaFileArchive, FaShieldAlt, FaCar, FaHospitalAlt } from "react-icons/fa";
+import { AiOutlineBank } from "react-icons/ai";
+import { MdSupportAgent, MdLocationCity } from "react-icons/md";
 
 export const home_hero_data = [
   {
@@ -420,19 +423,79 @@ export const TestmonialData = [
       "BIZLOUNGE Documents Clearing Services Co. in Dubai offers exceptional service with professionalism and precision. They’re highly prompt in attending clients, providing clear proposals, and completing tasks efficiently. Affordable pricing and smooth execution make them a top choice for document services. Highly recommended for hassle free support…!!",
   },
   {
-    name:"Wafa",
-    review:"I just wanted to say a big thank you to the team at Biz Lounge for the way they handled my immigration process. Everything was clear, smooth, and well-organized from start to finish, no confusion, no delays, just efficient and professional service."
+    name: "Wafa",
+    review: "I just wanted to say a big thank you to the team at Biz Lounge for the way they handled my immigration process. Everything was clear, smooth, and well-organized from start to finish, no confusion, no delays, just efficient and professional service."
   },
   {
-    name:"Aniket Kulkarni",
-    review:"Bizlounge team helped me in obtaining 10 years golden visa. They helped me in understanding the process, submitting the right documents & solving some issues. They made the process very smooth.",
+    name: "Aniket Kulkarni",
+    review: "Bizlounge team helped me in obtaining 10 years golden visa. They helped me in understanding the process, submitting the right documents & solving some issues. They made the process very smooth.",
   },
   {
 
-    name:"kamala jawahar",
-    review:"Very confident and cooperative team. Excellent customer service and effective handling of documents and procedures. Highly recommend."
-  },{
-    name:"Antony Anglin",
-    review:"Bizlounge have taken control of all my business license renewals and my staff visas and quotas and I can honestly say over the 4 years I’ve been operating in Dubai they are by far the best!"
+    name: "kamala jawahar",
+    review: "Very confident and cooperative team. Excellent customer service and effective handling of documents and procedures. Highly recommend."
+  }, {
+    name: "Antony Anglin",
+    review: "Bizlounge have taken control of all my business license renewals and my staff visas and quotas and I can honestly say over the 4 years I’ve been operating in Dubai they are by far the best!"
   }
+];
+
+export const pro_service_data = [
+  {
+    id: 1,
+    image: service_icon_blue_1,
+    icon: FaPassport,
+    title: "Labour & Immigration Services",
+    desc: "We handle employee visas, residency permits, work permits, and labour contracts efficiently ensuring full compliance with UAE regulations",
+    tab_value: "comapany_formation",
+  },
+  {
+    id: 2,
+    image: service_icon_blue_3,
+    icon: MdSupportAgent,
+    title: "Local Agent Assistance",
+    desc: "Our team manages all local agent interactions, official communications, and regulatory obligations to streamline your business operations",
+    tab_value: "visa_services",
+  },
+  {
+    id: 3,
+    image: service_icon_blue_2,
+    icon: AiOutlineBank,
+    title: "Company Bank Account Opening",
+    desc: "We assist with bank selection, documentation, and account setup, ensuring your finances are ready to support business growth",
+    tab_value: "pro_services",
+  },
+  {
+    id: 4,
+    image: service_icon_blue_6,
+    icon: FaFileInvoiceDollar,
+    title: "VAT and Corporate Tax Registration",
+    desc: "Our experts guide you through VAT and corporate tax registration, filing, and compliance,keeping your business aligned with UAE regulations.",
+    tab_value: "document_attestation",
+  },
+  {
+    id: 5,
+    image: service_icon_blue_4,
+    icon: FaFileArchive,
+    title: "Company Liquidation",
+    desc: "We provide professional support for company closure, handling all legal, financial, and regulatory requirements efficiently",
+    tab_value: "trademark_registration",
+  },
+
+  {
+    id: 6,
+    image: service_icon_blue_7,
+    icon: MdLocationCity,
+    title: " Municipality Approvals",
+    desc: "From approvals to permits, we manage interactions with local municipal authorities to ensure your operations comply with regulation",
+    tab_value: "comapany_formation",
+  },
+  {
+    id: 7,
+    image: service_icon_blue_8,
+    icon: FaShieldAlt,
+    title: "Health & Vehicle Insurance Services ",
+    desc: "We help businesses secure mandatory employee health insurance and vehicle insurancepolicies, ensuring compliance and protection",
+    tab_value: "comapany_formation",
+  },
 ];
