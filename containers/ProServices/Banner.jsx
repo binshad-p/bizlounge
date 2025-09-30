@@ -61,9 +61,10 @@ const Banner = () => {
         <form ref={form} onSubmit={sendEmail}>
           <div className="bg-white rounded-lg shadow-lg p-4 md:p-8   md:w-[330px] lg:w-[500px] w-full mt-10 md:mt-0 ">
             <h2 className="text-[33px]   font-bold text-blue-900 mb-1 md:mb-4  leading-[50px] min-w-max">
-              Get Free <br className="sm:block md:block lg:hidden" /> Consultation
+              Get Free <br className="sm:block md:block lg:hidden" />{" "}
+              Consultation
             </h2>
-            <form className="flex flex-col gap-2 md:gap-4">
+            <div className="flex flex-col gap-2 md:gap-4">
               <div className=" w-full py-3">
                 <label className="font-normal text-base text-[#4E4F53] ">
                   Full name *
@@ -95,10 +96,14 @@ const Banner = () => {
                   />
                 </div>
               </div>
-              <button className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-md font-semibold">
-                Submit
+              <button
+                type="submit"
+                disabled={loading}
+                className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-md font-semibold"
+              >
+                {loading ? "Sending.." : "Submit"}
               </button>
-            </form>
+            </div>
           </div>
         </form>
       </div>

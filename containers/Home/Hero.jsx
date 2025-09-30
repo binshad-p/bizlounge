@@ -64,57 +64,61 @@ const Hero = () => {
   return (
     <div className="relative max-sm:h-[100vh] sm:max-lg:h-[100vh]">
       {showForm && (
-        <div className="rounded-md   absolute right-12 top-40  lg:max-2xl:top-36 z-20 p-4 lg:max-2xl:p-3 shadow-lg  ">
-      
+        <div className="rounded-md   absolute md:right-12  bottom-0 lg:top-40    lg:max-2xl:top-36 z-20 p-0 lg:max-2xl:p-3 shadow-lg  ">
           <button
             onClick={() => setShowForm(false)}
             className="absolute top-2 right-2 text-gray-600 hover:text-gray-900 text-xl font-bold hidden lg:max-2xl:block sm:max-lg:block max-sm:block"
           >
             ✕
           </button>
-       <form ref={form} onSubmit={sendEmail}>
-          <div className="bg-white rounded-lg shadow-lg p-4 md:p-8    md:w-[330px] lg:w-[500px] w-full mt-10 md:mt-0 ">
-            <h2 className="text-[33px]   font-bold text-blue-900 mb-1 md:mb-4  leading-[50px] min-w-max">
-              Get Free <br className="sm:block md:hidden" /> Consultation
-            </h2>
-            <form className="flex flex-col gap-2 md:gap-4">
-              <div className=" w-full py-3">
-                <label className="font-normal text-base text-[#4E4F53] ">
-                  Full name *
-                </label>
-                <input
-                  name="from_name"
-                  type="text"
-                  required
-                  placeholder="Full Name"
-                  className="w-full  border-[0.800px] rounded-md  pl-2 pr-[15px] py-[15px] outline-none focus:ring-2 border-[#ced4da] text-[black] mt-2"
-                />
-              </div>
-              <div className="">
-                <label className="font-normal text-base text-[#4E4F53]  ">
-                  Phone no. *
-                </label>
-                <div className="flex gap-1 mt-2">
-                  {/* <input
+          <form ref={form} onSubmit={sendEmail}>
+            <div className="bg-white rounded-lg shadow-lg p-4 md:p-8    md:w-[330px] lg:w-[500px] w-[100vw]  mt-10 md:mt-0 ">
+              <h2 className="text-[33px]   font-bold text-blue-900 mb-1 md:mb-4  leading-[50px] min-w-max">
+                Get Free <br className="sm:block md:block lg:hidden" />{" "}
+                Consultation
+              </h2>
+              <div className="flex flex-col gap-2 md:gap-4">
+                <div className=" w-full py-3">
+                  <label className="font-normal text-base text-[#4E4F53] ">
+                    Full name *
+                  </label>
+                  <input
+                    name="from_name"
+                    type="text"
+                    required
+                    placeholder="Full Name"
+                    className="w-full  border-[0.800px] rounded-md  pl-2 pr-[15px] py-[15px] outline-none focus:ring-2 border-[#ced4da] text-[black] mt-2"
+                  />
+                </div>
+                <div className="">
+                  <label className="font-normal text-base text-[#4E4F53]  ">
+                    Phone no. *
+                  </label>
+                  <div className="flex gap-1 mt-2">
+                    {/* <input
                   type="text"
                   defaultValue="+971"
                   className="w-20  border-[0.800px] rounded-l-md  py-[15px] pl-[10px] pr-[15px] outline-none focus:ring-2 border-[#ced4da] text-black text-left"
                 /> */}
-                  <input
-                    name="from_number"
-                    type="number"
-                    required
-                    placeholder="Phone no."
-                    className="flex-1  border-[0.800px] rounded-md py-[15px] pl-2 pr-[15px] outline-none focus:ring-2 border-[#ced4da] text-[black]"
-                  />
+                    <input
+                      name="from_number"
+                      type="number"
+                      required
+                      placeholder="Phone no."
+                      className="flex-1  border-[0.800px] rounded-md py-[15px] pl-2 pr-[15px] outline-none focus:ring-2 border-[#ced4da] text-[black]"
+                    />
+                  </div>
                 </div>
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-md font-semibold"
+                >
+                  {loading ? "Sending.." : "Submit"}
+                </button>
               </div>
-              <button className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-md font-semibold">
-                Submit
-              </button>
-            </form>
-          </div>
-        </form>
+            </div>
+          </form>
         </div>
       )}
 
@@ -137,7 +141,7 @@ const Hero = () => {
                   {item?.desc}
                 </p>
               </div>
-            
+
               <Image
                 src={item?.image}
                 alt="Slide image"

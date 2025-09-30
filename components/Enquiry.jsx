@@ -120,7 +120,7 @@ const Enquiry = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className=" px-[5rem] mt-4 bg-blue-500 text-white py-3 rounded-full hover:bg-blue-600 transition font-bold max-sm:text-sm max-sm:px-[1rem]"
+                  className=" px-[5rem] mt-4 bg-blue-500 text-white py-3 rounded-full hover:bg-blue-600 transition font-bold max-sm:text-sm max-sm:px-[3rem]"
                 >
                   {loading ? "Sending..." : "Submit"}
                 </button>
