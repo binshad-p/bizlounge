@@ -6,16 +6,16 @@ import Link from "next/link";
 const CallAction = () => {
   return (
     <div className="padding-x   text-white py-16 px-6  ">
-      <div className="flex flex-col text-center gap-6 xl:gap-12  bg-counter_bg bg-right bg    py-16 rounded-xl px-8 ">
+      <div className="flex flex-col text-center gap-6 xl:gap-12  bg-counter_bg bg-right bg    py-16 rounded-xl px-4 md:px-8 ">
         <div className="flex flex-col items-center">
           <h1 className="text-[40px] font-semibold">
             
           </h1>
-            <h2 className="flex font-light text-[40px] max-sm:text-2xl max-sm:flex-col">
+          <h2 className="  text-[#fff] font-light text-[40px] max-sm:text-2xl max-sm:items-start sm:max-lg:text-3xl mb-5">
            Contact Us for &nbsp;
           <span className="font-semibold"> PRO Services</span>
         </h2>
-          <p className="text-center flex-1   max-w-[60%] font-light ">
+          <p className="text-center flex-1 max-w-[90%]   md:max-w-[60%] font-light ">
             Simplify Your Business Operations Today. Contact Bizlounge for
             Expert PRO Services in the UAE.
           </p>
@@ -23,12 +23,12 @@ const CallAction = () => {
         <div className="flex flex-col md:flex-row gap-2 justify-center">
                       <Link href="/contact">
 
-          <button className="text-base bg-[#fff] py-4 px-8 rounded-xl text-[#333]">
+          <button className="text-base bg-[#fff] py-4 px-8 rounded-xl text-[#333] w-[235px]">
             Get Started Today
           </button>
           </Link>
           <Link href="/contact">
-            <button className="text-base bg-[#1A2D39] py-4 px-8 rounded-xl text-white">
+            <button className="text-base bg-[#1A2D39] py-4 px-8 rounded-xl text-white w-[235px]">
               Schedule Consultation
             </button>
           </Link>

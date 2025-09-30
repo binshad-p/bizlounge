@@ -7,12 +7,12 @@ const About = () => {
   return (
     <div className=" flex  flex-col lg:flex-row justify-between  items-center padding-x md:py-[3rem] py-[2rem] lg:py-[100px]   gap-12">
       <div className=" text-[#2d3845] w-full flex flex-col gap-8">
-        <div className=" items-center md:items-start">
-          <h2 className="  text-[#2d3845] font-light text-[40px] max-sm:text-2xl max-sm:items-start sm:max-lg:text-2xl">
+        <div className=" items-center md:items-start ">
+          <h2 className="  text-[#2d3845] font-light text-[40px] max-sm:text-2xl max-sm:items-start sm:max-lg:text-2xl mb-5">
             Why Choose {""}
             <span className="font-semibold"> Bizlounge</span>
           </h2>{" "}
-          <p className="text-[#898A9C] text-lg  font-light max-w-[90%] md:max-w-full text-left">
+          <p className="text-[#2D3845] text-lg  font-light max-w-[90%] md:max-w-full text-left">
             Bizlounge is a leading business setup and PRO services provider in
             the UAE. We empower companies by managing complex administrative
             tasks, ensuring legal compliance, and delivering professional
@@ -22,7 +22,7 @@ const About = () => {
           </p>
         </div>
         <div className="flex flex-col gap-4">
-          <p className="text-[#898A9C] text-lg  font-light max-w-[90%] mb-3 md:max-w-full text-left">
+          <p className="text-[#2D3845] text-lg  font-light max-w-[90%] mb-3 md:max-w-full text-left">
             Choosing Bizlounge means partnering with a trusted expert in PRO
             services. We provide:
           </p>

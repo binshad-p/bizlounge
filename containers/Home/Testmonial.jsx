@@ -12,12 +12,12 @@ import { TestmonialData } from "@/constant";
 
 const Testmonial = () => {
   return (
-    <div className="flex flex-col items-center justify-center padding-x pt-[4rem] md:pt-[7.5rem] max-sm:flex-col ">
+    <div className="flex flex-col items-center justify-center padding-x pt-[4rem] md:pt-[5rem] lg::pt-[7.5rem] max-sm:flex-col ">
       <div className="max-sm:w-full">
         <p className="uppercase text-sm text-[#B2B8BF] font-medium text-center max-sm:text-start">
           Testimonials
         </p>
-        <h2 className="flex font-light text-[40px] max-sm:text-2xl max-sm:flex-col">
+          <h2 className="  text-[#2d3845] font-light text-[40px] max-sm:text-2xl max-sm:items-start sm:max-lg:text-2xl">
           Knows About &nbsp;
           <span className="font-semibold"> Our Customer Say</span>
         </h2>

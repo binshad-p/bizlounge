@@ -46,7 +46,7 @@ const Banner = () => {
         <div className="text-white max-w-xl ">
           {/* Logo */}
           {/* class="bg-white text-black px-[100px] py-5 z-50 w-full font-medium fixed top-0 transition-colors duration-300 max-sm:px-[2rem] lg:max-2xl:px-[5rem] */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-6 leading-[60px]">
+          <h1 className="text-3xl  md:text-3xl lg:text-6xl font-semibold text-white mb-6  lg:leading-[60px]">
             Your Trusted PRO Services Partner in the UAE
           </h1>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl font-light text-white/80  mb-6">
@@ -61,7 +61,7 @@ const Banner = () => {
         <form ref={form} onSubmit={sendEmail}>
           <div className="bg-white rounded-lg shadow-lg p-4 md:p-8   md:w-[330px] lg:w-[500px] w-full mt-10 md:mt-0 ">
             <h2 className="text-[33px]   font-bold text-blue-900 mb-1 md:mb-4  leading-[50px] min-w-max">
-              Get Free <br className="sm:block md:hidden" /> Consultation
+              Get Free <br className="sm:block md:block lg:hidden" /> Consultation
             </h2>
             <form className="flex flex-col gap-2 md:gap-4">
               <div className=" w-full py-3">
