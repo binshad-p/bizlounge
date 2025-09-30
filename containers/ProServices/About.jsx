@@ -78,7 +78,7 @@ const About = () => {
           <div className="gap-2 flex flex-col">
             <p className="mt-6 text-2xl font-semibold min-w-max">
               Have any Question?
-              <br className="md:hidden" /> Call As
+              <br className="md:hidden" /> Call Us At
             </p>
 
             <p className="text-[18px] font-medium">+971 5447 02611</p>
