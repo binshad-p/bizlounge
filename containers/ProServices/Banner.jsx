@@ -43,7 +43,7 @@ const Banner = () => {
         style={{ objectFit: "cover", objectPosition: "center", width: "100%" }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent flex flex-col md:flex-row justify-center md:justify-between items-center text-white  py-6 padding-x ">
-        <div className="text-white max-w-xl ">
+        <div className="text-white max-w-xl mt-10 md:mt-0 ">
           {/* Logo */}
           {/* class="bg-white text-black px-[100px] py-5 z-50 w-full font-medium fixed top-0 transition-colors duration-300 max-sm:px-[2rem] lg:max-2xl:px-[5rem] */}
           <h1 className="text-3xl  md:text-3xl lg:text-6xl font-semibold text-white mb-6  lg:leading-[60px]">
