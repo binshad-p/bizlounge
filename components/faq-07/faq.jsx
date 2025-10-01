@@ -27,7 +27,7 @@ const FaqBizlounge = () => {
           type="single"
           collapsible
           className="mt-8 sm:mt-10 space-y-4"
-          defaultValue="question-1">
+          defaultValue="question-0">
           {faq.map(({ question, answer }, index) => (
             <AccordionItem
               key={question}
