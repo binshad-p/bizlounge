@@ -113,7 +113,7 @@ export const home_service_data = [
     id: 3,
     image: service_icon_blue_2,
     image1: service_icon_white_2,
-    title: "Pro Services ",
+    title: "Pro Services",
     desc: "Professional support for government processes and documentation.",
     tab_value: "pro_services",
   },

@@ -6,10 +6,16 @@ import { useRouter } from "next/navigation"; // ✅ Next.js navigation hook
 const OurServices = () => {
   const router = useRouter();
 
-  const handleNavigate = (value) => {
-    localStorage.setItem('tabValue',value)
-    router.push("/services"); // ✅ navigate to given path
-  };
+const handleNavigate = (value, title) => {
+  localStorage.setItem("tabValue", value);
+
+  if (value === "pro_services") {
+    router.push("/pro-service"); // ✅ navigate to pro-service page
+  } else {
+    router.push("/services"); // ✅ default navigate
+  }
+};
+
   return (
     <div className="padding-x py-[7.5rem] bg-service_bg flex flex-col justify-center items-center max-sm:py-[5rem] bg-no-repeat bg-cover">
       <div className="flex justify-between items-center max-sm:flex-col max-sm:gap-5">
