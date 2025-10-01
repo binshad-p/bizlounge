@@ -25,7 +25,7 @@ export default function Home() {
       <WhyChooseUs />
       <Counter />
       <Testmonial />
-      <FaqBizlounge />
+      {/* <FaqBizlounge /> */}
       <LinkedWith />
       <div className="pb-[5rem]">
         <Enquiry />

@@ -36,7 +36,7 @@ const FaqBizlounge = () => {
               <AccordionPrimitive.Header className="flex">
                 <AccordionPrimitive.Trigger
                   className={cn(
-                    "flex flex-1 items-center justify-between pt-4 pb-3 font-semibold tracking-tight transition-all hover:underline [&[data-state=open]>svg]:rotate-45 text-[#2D3845] text-[22px]  max-sm:text-base sm:max-lg:text-base",
+                    "flex flex-1 items-center justify-between pt-4 pb-3 font-semibold tracking-tight transition-all  [&[data-state=open]>svg]:rotate-45 text-[#2D3845] text-[22px]  max-sm:text-base sm:max-lg:text-base",
                     "text-start text-lg ",
 
                   )}>

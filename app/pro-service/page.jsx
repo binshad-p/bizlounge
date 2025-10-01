@@ -1,5 +1,6 @@
 "use client";
 
+import FaqBizlounge from "@/components/faq-07/faq";
 import Testmonial from "@/containers/Home/Testmonial";
 import About from "@/containers/ProServices/About";
 import Banner from "@/containers/ProServices/Banner";
@@ -17,6 +18,7 @@ export default function ProServices() {
           <OurProService/>
           <Testmonial/>
           <CallAction/>
+          <FaqBizlounge/>
        
   
         </div>
