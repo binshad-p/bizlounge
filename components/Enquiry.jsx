@@ -59,7 +59,7 @@ const Enquiry = () => {
                 Contact Us
               </p>
 
-              <h2 className="flex text-[#2D3845] font-light text-[40px]">
+              <h2 className="flex text-[#2D3845] font-light text-[40px]  max-sm:text-2xl max-sm:items-start sm:max-lg:text-2xl">
                 Get in
                 <span className="font-semibold"> &nbsp; Touch</span>{" "}
               </h2>

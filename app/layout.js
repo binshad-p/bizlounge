@@ -20,13 +20,12 @@ export const metadata = {
 
 const dmSams = DM_Sans(
   {
-    weight: ["100","200","300","400","500","600","700","800"],
+    weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
     subsets: ["latin"],
     display: "swap",
     variable: "--font-dm-sans",
   }
 )
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

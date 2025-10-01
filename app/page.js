@@ -2,6 +2,7 @@
 
 import Counter from "@/components/Counter";
 import Enquiry from "@/components/Enquiry";
+import FaqBizlounge from "@/components/faq-07/faq";
 import About from "@/containers/Home/About";
 import CompanyFormationTypes from "@/containers/Home/CompanyFormationTypes";
 import Hero from "@/containers/Home/Hero";
@@ -24,6 +25,7 @@ export default function Home() {
       <WhyChooseUs />
       <Counter />
       <Testmonial />
+      <FaqBizlounge />
       <LinkedWith />
       <div className="pb-[5rem]">
         <Enquiry />

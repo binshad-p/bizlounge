@@ -72,7 +72,7 @@ const Hero = () => {
             ✕
           </button>
           <form ref={form} onSubmit={sendEmail}>
-            <div className="bg-white rounded-lg shadow-lg p-4 md:p-8    md:w-[330px] lg:w-[500px] w-[100vw]  mt-10 md:mt-0 ">
+            <div className="bg-white rounded-lg shadow-lg p-4 md:p-8    md:w-[330px] lg:w-[500px] w-[100vw]  mt-10 md:mt-0  ">
               <h2 className="text-[33px]   font-bold text-blue-900 mb-1 md:mb-4  leading-[50px] min-w-max">
                 Get Free <br className="sm:block md:block lg:hidden" />{" "}
                 Consultation

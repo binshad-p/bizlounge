@@ -499,3 +499,30 @@ export const pro_service_data = [
     tab_value: "comapany_formation",
   },
 ];
+
+export const faq = [
+  {
+    question: "What services does Bizlounge Business Service Team provide?",
+    answer: "We provide complete business setup in UAE, PRO services, trade license renewal, visa processing, and corporate support solutions tailored for entrepreneurs and companies.",
+  },
+  {
+    question: "How can Bizlounge help me start a business in the UAE?",
+    answer: "Our experts guide you through company formation, trade license registration, approvals, and legal documentation.With Bizlounge, you can set up your business smoothly.Call us at + 971544702611 for a free consultation.",
+  },
+  {
+    question: "Do you assist with visa and immigration services?",
+    answer: "Yes, we handle employment visas, investor visas, and family visas with quick processing and full compliance.For details, contact + 971 544702611.",
+  },
+  {
+    question: "Can Bizlounge manage my ongoing business compliance?",
+    answer: "Absolutely. We take care of trade license renewals, document attestations, and compliance filings so your operations run without interruption.",
+  },
+  {
+    question: "Why should I choose Bizlounge over others?",
+    answer: "We are trusted for transparent processes, timely services, and personalized solutions that save you time and effort while keeping your business compliant.",
+  },
+  {
+    question: "How can I contact Bizlounge Business Service Team?",
+    answer: "You can reach us directly at +971 544702611 or visit our office. Our consultants are ready toprovide professional guidance and a free initial consultation.",
+  },
+];
