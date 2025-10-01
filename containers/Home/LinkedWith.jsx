@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
-import {  LinkedWithData } from "@/constant";
+import { LinkedWithData } from "@/constant";
 
 const LinkedWith = () => {
   return (
@@ -12,7 +12,7 @@ const LinkedWith = () => {
             Connecting Partners
           </p>
 
-          <h2 className="flex   font-light text-[40px] max-sm:flex-col max-sm:text-2xl sm:max-lg:text-2xl">
+          <h2 className="flex   max-sm:flex-col  text-[#2d3845] font-light text-[40px] max-sm:text-2xl max-sm:items-start sm:max-lg:text-2xl">
             We work closely with all &nbsp;
             <span className="font-semibold"> Government Agencies</span>
           </h2>
@@ -20,7 +20,7 @@ const LinkedWith = () => {
 
         <Marquee>
           <div className="flex space-x-10 ">
-            {LinkedWithData?.map((item,index) => (
+            {LinkedWithData?.map((item, index) => (
               <Image
                 src={item?.image}
                 alt="logo1"
@@ -30,7 +30,7 @@ const LinkedWith = () => {
                 className="w-auto h-20 "
               />
             ))}
-            {LinkedWithData?.map((item,index) => (
+            {LinkedWithData?.map((item, index) => (
               <Image
                 src={item?.image}
                 alt="logo1"
