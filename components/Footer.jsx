@@ -87,7 +87,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-sm hover:text-white">
+                <Link href="/pro-service" className="text-sm hover:text-white">
                   Pro services
                 </Link>
               </li>
