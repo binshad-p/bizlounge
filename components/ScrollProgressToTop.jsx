@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { BiSolidPhoneCall } from "react-icons/bi";
 
 const ScrollProgressComponent = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -34,11 +35,10 @@ const ScrollProgressComponent = () => {
 
   return (
     <div
-      className={`fixed bottom-32 max-sm:bottom-20 max-sm:right-2 z-50 right-8 transition-all duration-300 ${
-        isVisible
-          ? "opacity-100 translate-y-0"
-          : "opacity-0 translate-y-10 pointer-events-none"
-      }`}
+      className={`fixed bottom-28 max-sm:bottom-20 max-sm:right-2 z-50 right-8 transition-all duration-300 ${isVisible
+        ? "opacity-100 translate-y-0"
+        : "opacity-0 translate-y-10 pointer-events-none"
+        }`}
     >
       <button
         onClick={scrollToTop}
@@ -77,6 +77,13 @@ const ScrollProgressComponent = () => {
         {/* Progress percentage text */}
         <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2"></div>
       </button>
+      <a
+        href="tel:+971544702611"
+        className="flex items-center justify-center w-14 h-14 bg-[#0067da] hover:bg-[#0056b8] p-4  mt-5 mb-0 rounded-full shadow-lg transition-transform duration-300 hover:scale-110"
+        aria-label="Call us"
+      >
+        <BiSolidPhoneCall className="text-white text-2xl" />
+      </a>
     </div>
   );
 };
