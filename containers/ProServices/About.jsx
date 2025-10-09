@@ -76,6 +76,7 @@ const About = () => {
             >  <BiSolidPhoneCall className=" text-white " /></a>
 
           </div>
+          {/*add phone link */}
           <div className="gap-2 flex flex-col">
             <a href="tel:+971544702611" className="block hover:text-[#0067da] transition-colors duration-300">
             <p className="mt-6 text-2xl font-semibold min-w-max">
