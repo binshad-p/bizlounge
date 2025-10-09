@@ -72,18 +72,18 @@ const About = () => {
           />
           <div className="flex justify-center -mt-6">
 
-            <a href="tel:+917012755138" className="bg-[#0067da] p-3 rounded-full shadow-lg"
+            <a href="tel:+971544702611" className="bg-[#0067da] p-3 rounded-full shadow-lg hover:bg-[#0056b8] transition-transform duration-300 hover:scale-110"
             >  <BiSolidPhoneCall className=" text-white " /></a>
 
           </div>
           <div className="gap-2 flex flex-col">
-            <a href="tel:+971544702611" className="block">
+            <a href="tel:+971544702611" className="block hover:text-[#0067da] transition-colors duration-300">
             <p className="mt-6 text-2xl font-semibold min-w-max">
               Have any Question?
               <br className="md:hidden" /> Call Us At
             </p>
             </a>
-            <a href="tel:+971544702611" className="block">
+            <a href="tel:+971544702611" className="block hover:text-[#0067da] hover:underline transition-all duration-300">
             <p className="text-[18px] font-medium">+971 5447 02611</p>
             </a>
           </div>
