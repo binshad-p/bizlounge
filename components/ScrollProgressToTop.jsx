@@ -35,7 +35,7 @@ const ScrollProgressComponent = () => {
 
   return (
     <div
-      className={`fixed bottom-28 max-sm:bottom-20 max-sm:right-2 z-50 right-8 transition-all duration-300 ${isVisible
+      className={`fixed bottom-28 max-sm:bottom-20 max-sm:right-2 z-50 right-8 transition-all duration-300 flex flex-col items-center ${isVisible
         ? "opacity-100 translate-y-0"
         : "opacity-0 translate-y-10 pointer-events-none"
         }`}
@@ -79,7 +79,7 @@ const ScrollProgressComponent = () => {
       </button>
       <a
         href="tel:+971544702611"
-        className="flex items-center justify-center w-14 h-14 bg-[#0067da] hover:bg-[#0056b8] p-4  mt-5 mb-0 rounded-full shadow-lg transition-transform duration-300 hover:scale-110"
+        className="flex items-center justify-center w-14 h-14 bg-[#0067da] hover:bg-[#0056b8] p-4  my-5  rounded-full shadow-lg transition-transform duration-300 hover:scale-110"
         aria-label="Call us"
       >
         <BiSolidPhoneCall className="text-white text-2xl" />
