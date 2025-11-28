@@ -138,7 +138,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-12 pt-3 border-t border-white text-center text-sm">
-<p>Copyright © {new Date().getFullYear()} All Rights Reserved.</p>
+<p>Copyright © {new Date().getFullYear()} All Rights Reserved. | <Link href="/privacy-policy" className="hover:text-white underline">Privacy Policy</Link></p>
         </div>
       </div>
     </footer>
